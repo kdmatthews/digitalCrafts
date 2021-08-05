@@ -15,5 +15,11 @@ if menu == '1':
     priority_input = input("Please input the priority as 'high', 'medium', or 'low'.\n")
     task_list.append(title_input)
 elif menu == '2':
-    for element in task_list:
-        print(task_list.index(element, task_list))
+    for i, element in enumerate(task_list):
+        print(i, element)
+    delete_task = int(input("Type the number of the task you would like to delete: "))
+    del task_list[delete_task]
+    print("Here is your new to do list: ")
+    print(task_list)
+
+        
