@@ -15,6 +15,7 @@ user2 = 'Joe'
 print("Hello " + user1 + " and " + user2)
 print("Howdy %s & %s", user1,user2)
 #print(f"Hello {user1} & {user2} ")
+print()
 
 joesResponse = input("How long have you been coding?\n")
 print(joesResponse)
