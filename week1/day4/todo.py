@@ -1,6 +1,6 @@
 menu=True 
-todo = {'Wash the car': 'low', 'Mow the lawn': 'medium', 'Walk the dog': 'high', 'Do the dishes': 'high'}
-task_list = ['wash the dog', 'mow the lawn', 'take out the trash']
+
+task_list = []
 
 while menu:
     print ("""
@@ -14,19 +14,21 @@ while menu:
         title_input = input("Please input the title of the task.\n")
         priority_input = input("Please input the priority as 'high', 'medium', or 'low'.\n")
         task_list.append(title_input)
+        todo = {title_input: priority_input}
         print("Here is your to do list: ")
         print(task_list)
     elif menu == '2':
-        for i, element in enumerate(task_list):
+        for i, element in enumerate(todo.items()):
             print(i, element)
         delete_task = int(input("Type the number of the task you would like to delete: "))
         del task_list[delete_task]
         print("Here is your new to do list: ")
         print(task_list)
     elif menu == '3':
-        for i, todo in enumerate(todo.items()):
+        for i, l in enumerate(task_list):
             i += 1
-            print(i, todo)
+            new_list = task_list.append(todo)
+            print(i, new_list)
         # for title, priority in sorted(todo.items()):
         #     print(title, priority)
     elif menu == 'q':
