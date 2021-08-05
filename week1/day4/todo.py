@@ -1,4 +1,5 @@
 menu=True 
+todo = {'Wash the car': 'low', 'Mow the lawn': 'medium', 'Walk the dog': 'high', 'Do the dishes': 'high'}
 while menu < 5:
     print ("""
     Press 1 to add a task
@@ -21,5 +22,13 @@ elif menu == '2':
     del task_list[delete_task]
     print("Here is your new to do list: ")
     print(task_list)
+elif menu == '3':
+    for title, priority in todo.items():
+        print(title, priority)
+elif menu == 'q':
+    print("Have a nice day!")
+    SystemExit
+else:
+    print("Error! Be sure to type '1', '2', '3', or 'q'")
 
         
