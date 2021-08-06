@@ -1,7 +1,7 @@
-menu=True 
+# To Do List
 todo = {}
 task_list = []
-while menu:
+while True:
     print ("""
     Press 1 to add a task
     Press 2 to delete a task
@@ -27,11 +27,6 @@ while menu:
         for i, element in enumerate(task_list):
             i += 1
             print(i, element)
-        # for i, l in enumerate(todo):
-        #     i += 1
-        #     print(i, todo)
-        # for title, priority in sorted(todo.items()):
-        #     print(title, priority)
     elif menu == 'q':
         print("Have a nice day!")
         break
