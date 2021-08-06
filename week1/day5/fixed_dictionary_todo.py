@@ -1,6 +1,6 @@
 
 task_list = []
-todo2 = {}
+
 while True:
     print ("""
     Press 1 to add a task
