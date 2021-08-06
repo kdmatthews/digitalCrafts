@@ -26,4 +26,4 @@ while True:
         print("Have a nice day!")
         break
     else:
-        print("Error! Be sure to type '1', '2', '3', or 'q'")
+        print("Error! Please be sure to type '1', '2', '3', or 'q'")
