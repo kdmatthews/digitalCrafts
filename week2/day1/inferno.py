@@ -65,7 +65,6 @@ dantesHashOfInferno = {
 }
 print(dantesHashOfInferno['level1']['contents'][15])
 
-
 print(dantesHashOfInferno['level3']['contents'][0]['tower'])
 
 print(dantesHashOfInferno['level5']['contents'][0]['reeeeeee'][1]['anger'])
