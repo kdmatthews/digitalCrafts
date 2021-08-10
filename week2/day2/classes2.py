@@ -49,23 +49,23 @@ britt = Person(10, "Britt", "Blondeish", 20, 2, "123 main st")
 # Inheritance
 # Person
 class Athlete(Person):
-    # 6.1
-    # vertical jump
+    # height
+    # vertical Jump
     # sport
+    # but they also have lifePoints, name, hairColor, age, ears, address
     def __init__(self, lifePoints, name, hairColor, age, ears, address, height, vertical, sport):
         # In order to inherit the init function of the parent class, we use super(). whatever we want to inherit, .__init__()
         super().__init__(lifePoints, name, hairColor, age, ears, address)
         self.height = height
         self.vertical = vertical
         self.sport = sport
-        # super().__init__(lifePoints, name, hairColor, age, ears, address)
-    
+
     def playSports(self):
         print("I play " + self.sport)
 
 
 timothy = Athlete(20, "Timothy", "black", 20, 2,
                   "123 w main st", "6.1", "36", "basketball")
-
-timothy.changeHairColor('red')
-print(timothy.hairColor)
+# subclasses inherit methods from the parent class
+timothy.takeDamage(1)
+timothy.playSports()
