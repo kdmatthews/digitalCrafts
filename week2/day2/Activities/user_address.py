@@ -7,10 +7,15 @@ class User:
         self.addresses = []
 
     def add_address(self, address):
-        addresses = self.addresses.append(address)
+        self.addresses.append(address)
     
     def display_addresses(self):
-        print(self.addresses)
+        for address in self.addresses:
+            print(self.street)
+            print(self.city)
+            print(self.state)
+            print(self.zip_code) 
+
     
 
 class Address(User):
