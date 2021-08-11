@@ -15,7 +15,7 @@ class User(Address):
     
     
     def add_address(self, address):
-        addresses = self.addresses.append(address)
+        self.addresses.append(address)
     
     def display_addresses(self):
         print(self.addresses)
