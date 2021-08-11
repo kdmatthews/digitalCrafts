@@ -1,9 +1,11 @@
 import random
+import time
 
 class Characters():
-    def __init__(self, name, health):
+    def __init__(self, name, health, attack):
         self.name = name
         self.health = health
+        self.attack = attack
         
     def eat(self):
         self.health += 10
@@ -14,17 +16,25 @@ class Characters():
     def shield_failure(self):
         self.health -= 10
     
+    def attack_player(self):
+        self.attack -= 10
+    
         
 
-grogu = Characters('Grogu', 50)
-mudhorn = Characters('Mudhorn', 50)
-mando = Characters('Mando', 100)
-moffGideon = Characters('Moff Gideon', 100)
+grogu = Characters('Grogu', 50, 50)
+mudhorn = Characters('Mudhorn', 50, 50)
+mando = Characters('Mando', 100, 100)
+moffGideon = Characters('Moff Gideon', 100, 100)
 
 
-
-
-
+def rules():
+    print("Welcome Space Traveler")
+    time.sleep(2)
+    print("You will begin our game by selecting the champions for the fight")
+    time.sleep(3)
+    print("When attacked by the enemy you will lose health. The first player to reach 0 health loses the game.")
+    time.sleep(3)
+    print("Players are limited to the amount of times they can attack. Each time you attack you lose attack points.")
 
 
 def menu_grogu():
@@ -50,8 +60,8 @@ def main_grogu():
         user_choice = input("Please select your move!: ")
         if user_choice == "1":
             mudhorn.take_damage()
+            grogu.attack_player()
             print("You have used the force on the Mudhorn! He has taken 10 damage.")
-            input("Press k to keep playing: ")
         elif user_choice == "2":
             if grogu.health < 50:
                 grogu.eat()
@@ -63,8 +73,10 @@ def main_grogu():
             print("You were not quick enough. You have been sprayed by the Mudhorn.You take 10 damage ")
         elif user_choice == '4':
             print(grogu.health)  
+            print(grogu.attack)
         elif user_choice == '5':
             print(mudhorn.health)
+            print(mudhorn.attack)
         else:
             print("Please be sure to enter a number 1-5.")
     
@@ -86,11 +98,13 @@ def main_mando():
             random_number = random.randrange(11)
             if random_number < 5:
                 moffGideon.take_damage()
+                mando.attack_player()
                 print("You have used your Beskar Spear against Moff Gideon! He has taken 10 damage.")
             else:
+                mando.attack_player()
                 print("Moff Gideon dodged your attack.")
         elif user_choice == "2":
-            if mando.health < 50:
+            if mando.health < 100:
                 mando.eat()
                 print("You have eaten bone broth. 10 has been added to your health!")
             else:
@@ -100,8 +114,10 @@ def main_mando():
             print("You were not quick enough. Moff Gideon hit you with the Darksaber.You take 10 damage ")
         elif user_choice == '4':
             print(mando.health)  
+            print(mando.attack)
         elif user_choice == '5':
             print(moffGideon.health)
+            print(moffGideon.attack)
         else:
             print("Please be sure to enter a number 1-5.")
 
@@ -116,17 +132,13 @@ def main_mando():
         
     return
 def main():
-    print(""" 
-    Welcome to the Mandolorian Season 2
-    The Mudhorn is reaking havok on the town!
-    It is your mission to stop the beast. 
-    You are playing as the cute and adorable Grogu. 
-    """)
+    rules()
     game_choice = input("""
     Please select which characters you'd like to fight!
     You will play as Grogu or Mando. Game one is shorter than game two.
     1. Grogu vs. The Mudhorn 
-    2. Mando vs. Moff Gideon.""")
+    2. Mando vs. Moff Gideon.
+    """)
     if game_choice == '1':
         main_grogu()
     elif game_choice == '2':
