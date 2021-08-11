@@ -1,3 +1,5 @@
+import random
+
 class Characters():
     def __init__(self, name, health):
         self.name = name
@@ -25,7 +27,7 @@ moffGideon = Characters('Moff Gideon', 100)
 
 
 
-def menu():
+def menu_grogu():
     print("""
     Choose what to do!
     1. Attack
@@ -34,10 +36,17 @@ def menu():
     4. Check Grogu Health
     5. Check Mudhorn Health""")
 
+def menu_mando():
+    print("""
+    1. Attack Moff Gideon
+    2. Eat Bone Soup to restore health
+    3. Shield
+    4. Check Mando's Stats
+    5. Check Moff Gideon's Stats""")
 
 def main_grogu():
     while grogu.health != 0 or mudhorn.health != 0:
-        menu()
+        menu_grogu()
         user_choice = input("Please select your move!: ")
         if user_choice == "1":
             mudhorn.take_damage()
@@ -71,38 +80,36 @@ def main_grogu():
 
 def main_mando():
     while mando.health != 0 or moffGideon.health != 0:
-        menu()
+        menu_mando()
         user_choice = input("Please select your move!: ")
         if user_choice == "1":
-            moffGideon.take_damage()
-            print("You have used your Beskar Spear against Moff Gideon! He has taken 10 damage.")
-            input("Press enter to keep playing: ")
+            random_number = random.randrange(11)
+            if random_number < 5:
+                moffGideon.take_damage()
+                print("You have used your Beskar Spear against Moff Gideon! He has taken 10 damage.")
+            else:
+                print("Moff Gideon dodged your attack.")
         elif user_choice == "2":
             if mando.health < 50:
                 mando.eat()
                 print("You have eaten bone broth. 10 has been added to your health!")
-                input("Press enter to keep playing: ")
             else:
                 print("You are at maximum health")
-                input("Press enter to keep playing: ")
         elif user_choice == '3':
             mando.shield_failure()
             print("You were not quick enough. Moff Gideon hit you with the Darksaber.You take 10 damage ")
-            input("Press enter to keep playing: ")
         elif user_choice == '4':
             print(mando.health)  
-            input("Press enter to keep playing: ")
         elif user_choice == '5':
             print(moffGideon.health)
-            input("Press enter to keep playing: ")
         else:
             print("Please be sure to enter a number 1-5.")
-            input("Press enter to keep playing: ")
+
     
-        if grogu.health == 0:
+        if mando.health == 0:
             print("Game Over! Moff Gideon has defeated you!")
             break
-        elif mudhorn.health == 0:
+        elif moffGideon.health == 0:
             print("You have defeated Moff Gideon and now are the rightful owner of the DarkSaber")
             break
 
