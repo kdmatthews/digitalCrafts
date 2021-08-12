@@ -182,8 +182,8 @@ def main_grogu():
                 time.sleep(1.5)
         elif user_choice == '5':
             print("Grogu's Stats")
-            print(grogu.health)  
-            print(grogu.attack)
+            print(f"Health: {grogu.health}")  
+            print(f"Attack: {grogu.attack}")
             time.sleep(1.5)
         else:
             print("Please be sure to enter a number 1-5.")
