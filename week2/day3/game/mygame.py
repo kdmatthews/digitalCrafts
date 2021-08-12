@@ -72,11 +72,12 @@ def main():
 
         """)
         time.sleep(2)
-        print("""Your mission is to defeat the Mudhorn. 
-        You will start with 100 health and 100 attack points. 
-        To recharge health points you must eat.
-        To recharge attack points you must find a place to hide.
-        The first one to run out of health will lose the battle.
+        print("""
+            Your mission is to defeat the Mudhorn. 
+            You will start with 100 health and 100 attack points. 
+            To recharge health points you must eat.
+            To recharge attack points you must find a place to hide.
+            The first one to run out of health will lose the battle.
         """)
         time.sleep(3)
         main_grogu()
@@ -98,11 +99,11 @@ def main():
          """)
         time.sleep(2)
         print("""
-        Your mission is to defeat Moff Gideon. 
-        You will start with 100 health and 100 attack points. 
-        To recharge health points you must eat.
-        To recharge attack points you must find a place to hide.
-        The first one to run out of health will lose the battle.""")
+            Your mission is to defeat Moff Gideon. 
+            You will start with 100 health and 100 attack points. 
+            To recharge health points you must eat.
+            To recharge attack points you must find a place to hide.
+            The first one to run out of health will lose the battle.""")
         time.sleep(3)
         main_mando()
     else:
@@ -157,7 +158,7 @@ def main_grogu():
         elif user_choice == "2":
             if grogu.health < 50:
                 grogu.eat()
-                print("You have eaten a delicious frog and gained 10 health")
+                print("You have eaten a delicious frog and gained 10 health.")
                 time.sleep(1.5)
             else:
                 print("You are at maximum health")
