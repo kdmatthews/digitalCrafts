@@ -161,11 +161,6 @@ def main_grogu():
             print(grogu.health)  
             print(grogu.attack)
             time.sleep(2)
-        elif user_choice == '6':
-            print("Mudhorn's Stats")
-            print(f"Health: {mudhorn.health}")
-            print(f"Attack: {mudhorn.attack}")
-            time.sleep(2)
         else:
             print("Please be sure to enter a number 1-5.")
             time.sleep(1)
@@ -223,12 +218,12 @@ def main_mando():
                 time.sleep(1)
             else:
                 random_number = random.randrange(11)
-                if random_number < 6:
+                if random_number < 4:
                     moffGideon.health_damage()
                     mando.attack_damage()
                     print("You have used your Beskar Spear against Moff Gideon! He has taken 10 health damage.")
                     time.sleep(1)
-                elif random_number >= 6 and random_number < 9:
+                elif random_number >= 4 and random_number < 9:
                     if moffGideon.attack > 10:
                         mando.attack_damage()
                         mando.health_damage()
@@ -249,37 +244,38 @@ def main_mando():
             if mando.health > 90:
                 print("You are at maximum health!")
                 time.sleep(1)
-            elif random_number < 6:
+            elif random_number < 7:
                 mando.eat()
                 print("You have eaten bone broth. 10 has been added to your health!")
                 time.sleep(1)
             else:
                 mando.health_damage()
-                print("Moff Gideon got the jump on you while you were slurping your soup. 0 health points were gained.")
+                print("Moff Gideon got the jump on you while you were slurping your soup. You lose 10 health points.")
                 time.sleep(1)
         elif user_choice == '3':
             random_number = random.randrange(11)
-            if moffGideon.attack > 20:
-                if random_number < 6:
-                    mando.health_damage()
-                    moffGideon.attack_damage()
-                    print("You were not quick enough. Moff Gideon hit you with the Darksaber.You take 10 damage. ")
-                    time.sleep(1)
-                else:
-                    moffGideon.attack_damage()
-                    print("You were able to move out of the way. Moff Gideon struck a wall and lost 10 attack points.")
-                    time.sleep(1)
+            if random_number < 6:
+                mando.health_damage()
+                moffGideon.attack_damage()
+                print("You were not quick enough. Moff Gideon hit you with the Darksaber.You take 10 damage. ")
+                time.sleep(1)
             else:
                 print("Your Beskar blocked the attack.")
                 time.sleep(1)
         elif user_choice == '4':
-            if mando.attack >= 90:
-                print("Your Beskar was sticking out from behind the rock. You have been found by Moff Gideon.")
+            if mando.attack >= 70:
+                mando.health_damage()
+                print("Your Beskar was sticking out from behind the rock. You have been found by Moff Gideon. He slices your ankle. You will lose 10 health poitns.")
                 time.sleep(1)
             else:
-                mando.hide()
-                print("You have successfully hidden in a cave. While resting you recovered 10 attack points.")
-                time.sleep(1)
+                random_number = random.randrange(11)
+                if random_number < 9:
+                    mando.hide()
+                    print("You have successfully hidden in a cave. While resting you recovered 10 attack points.")
+                    time.sleep(1)
+                else:
+                    mando.health_damage()
+                    print("You were too slow. Moff Gideon charged at you and knocked you over. You lose 10 health points.")
         elif user_choice == '5':
             print("Mando's Stats")
             print(f"Health: {mando.health}")  
