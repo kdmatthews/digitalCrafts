@@ -71,8 +71,13 @@ def main():
 
         """)
         time.sleep(2)
-        print("Your mission is to defeat the Mudhorn. You both have 50 health and 50 attack points! Whoever runs out of health first will lose the battle..")
-        time.sleep(2)
+        print("""Your mission is to defeat the Mudhorn. 
+        You will start with 100 health and 100 attack points. 
+        To recharge health points you must eat.
+        To recharge attack points you must find a place to hide.
+        The first one to run out of health will lose the battle.
+        """)
+        time.sleep(3)
         main_grogu()
     elif game_choice == '2':
         print(""" You have selected to play as Mando.
@@ -91,7 +96,13 @@ def main():
     ~-._____/___:__(``/| |
          """)
         time.sleep(2)
-        print("Your mission is to defeat Moff Gideon. You will both start with 100 health and 100 attack points. The first one to run out of health will lose the battle.")
+        print("""
+        Your mission is to defeat Moff Gideon. 
+        You will start with 100 health and 100 attack points. 
+        To recharge health points you must eat.
+        To recharge attack points you must find a place to hide.
+        The first one to run out of health will lose the battle.""")
+        time.sleep(3)
         main_mando()
     else:
         print("Please be sure to enter 1 or 2.")
@@ -124,56 +135,58 @@ def main_grogu():
         if user_choice == "1":
             if grogu.attack < 10:
                 print("You do not have enough energy left to attack. You should find a place to hide.")
-                time.sleep(2)
+                time.sleep(1.5)
             else:
                 random_number = random.randrange(3)
                 if random_number == 0:
                     mudhorn.health_damage()
                     grogu.attack_damage()
                     print("You have used the force on the Mudhorn! He has taken 10 health damage.")
-                    time.sleep(2)
+                    time.sleep(1.5)
                 elif random_number == 1: 
                     grogu.attack_damage()
                     grogu.health_damage()
                     print("You use the force to sling a rock at the Mudhorn. He catches it in his mouth and charges at you. You take 10 health damage.")
+                    time.sleep(1.5)
                 else:
                     grogu.attack_damage()
                     mudhorn.health_damage()
                     print("You screamed for help! Mando lunges at the Mudhorn. The Mudhorn takes 10 health damage.")
+                    time.sleep(1.5)
         elif user_choice == "2":
             if grogu.health < 50:
                 grogu.eat()
                 print("You have eaten a delicious frog and gained 10 health")
-                time.sleep(2)
+                time.sleep(1.5)
             else:
                 print("You are at maximum health")
-                time.sleep(2)
+                time.sleep(1.5)
         elif user_choice == '3':
             if mudhorn.attack > 10:
                 grogu.health_damage()
                 mudhorn.attack_damage()
                 print("You were not quick enough. You have been smooshed by the Mudhorn.You take 10 damage ")
-                time.sleep(2)
+                time.sleep(1.5)
             else:
                 print("You used the force to keep the Mudhorn at bay.")
-                time.sleep(2)
+                time.sleep(1.5)
         elif user_choice == '4':
             if grogu.attack >= 40:
                 print("Your cuteness is impossible to hide. The mudhorn has spotted you.")
-                time.sleep(2)
+                time.sleep(1.5)
             else:
                 grogu.hide()
                 mudhorn.attack_damage()
                 print("You have successfully hidden behind Mando. While resting you recovered 10 attack points.")
-                time.sleep(2)
+                time.sleep(1.5)
         elif user_choice == '5':
             print("Grogu's Stats")
             print(grogu.health)  
             print(grogu.attack)
-            time.sleep(2)
+            time.sleep(1.5)
         else:
             print("Please be sure to enter a number 1-5.")
-            time.sleep(1)
+            time.sleep(1.5)
     
         if grogu.health == 0:
             print('Game Over! The Mudhorn has eaten you.')
