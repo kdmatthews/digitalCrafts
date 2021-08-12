@@ -55,12 +55,15 @@ def rules():
 def main():
     game_choice = input("""
     Please select which characters you'd like to fight!
-    You will play as Grogu or Mando. 
-       Character ||  Level
-     ------------||-----------
-    1. Grogu     ||  Easy
-    2. Mando     ||  Hard
     
+      |------------||-----------|
+      |  Character ||  Level    |
+      |------------||-----------|
+      | 1. Grogu   ||  Easy     |
+      | 2. Mando   ||  Hard     |
+      |------------||-----------|
+
+    Press 1 for Grogu and 2 for Mando.
     """)
     if game_choice == '1':
         print("""You have selected to play as Grogu!
@@ -74,7 +77,7 @@ def main():
         time.sleep(2)
         print("""
             Your mission is to defeat the Mudhorn. 
-            You will start with 100 health and 100 attack points. 
+            You will start with 50 health and 50 attack points. 
             To recharge health points you must eat.
             To recharge attack points you must find a place to hide.
             The first one to run out of health will lose the battle.
