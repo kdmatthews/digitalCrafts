@@ -248,7 +248,7 @@ def main_mando():
                     mando.attack_damage()
                     print("You have used your Beskar Spear against Moff Gideon! He has taken 10 health damage.")
                     time.sleep(1)
-                elif random_number >= 4 and random_number < 9:
+                elif random_number >= 4 and random_number < 7:
                     if moffGideon.attack > 10:
                         mando.attack_damage()
                         mando.health_damage()
@@ -269,7 +269,7 @@ def main_mando():
             if mando.health > 90:
                 print("You are at maximum health!")
                 time.sleep(1)
-            elif random_number < 7:
+            elif random_number < 8:
                 mando.eat()
                 print("You have eaten bone broth. 10 has been added to your health!")
                 time.sleep(1)
@@ -294,7 +294,7 @@ def main_mando():
                 time.sleep(1)
             else:
                 random_number = random.randrange(11)
-                if random_number < 9:
+                if random_number < 8:
                     mando.hide()
                     print("You have successfully hidden in a cave. While resting you recovered 10 attack points.")
                     time.sleep(1)
