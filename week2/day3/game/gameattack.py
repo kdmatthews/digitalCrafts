@@ -126,10 +126,20 @@ def main_grogu():
                 print("You do not have enough energy left to attack. You should find a place to hide.")
                 time.sleep(2)
             else:
-                mudhorn.health_damage()
-                grogu.attack_damage()
-                print("You have used the force on the Mudhorn! He has taken 10 damage.")
-                time.sleep(2)
+                random_number = random.randrange(3)
+                if random_number == 0:
+                    mudhorn.health_damage()
+                    grogu.attack_damage()
+                    print("You have used the force on the Mudhorn! He has taken 10 health damage.")
+                    time.sleep(2)
+                elif random_number == 1: 
+                    grogu.attack_damage()
+                    grogu.health_damage()
+                    print("You use the force to sling a rock at the Mudhorn. He catches it in his mouth and charges at you. You take 10 health damage.")
+                else:
+                    grogu.attack_damage()
+                    mudhorn.health_damage()
+                    print("You screamed for help! Mando lunges at the Mudhorn. The Mudhorn takes 10 health damage.")
         elif user_choice == "2":
             if grogu.health < 50:
                 grogu.eat()
