@@ -47,11 +47,9 @@ def rules():
 """)
     print("Welcome Space Traveler")
     time.sleep(2)
-    print("You will begin our game by selecting the champions for the fight")
+    print("The fate of the galaxy rests in your hands.")
     time.sleep(3)
-    print("When attacked by the enemy you will lose health. The first player to reach 0 health loses the game.")
-    time.sleep(3)
-    print("Players are limited to the amount of times they can attack. Each time you attack you lose attack points.")
+    print("Please press 1 or 2 to selct you champion!")
 
 def main():
     game_choice = input("""
@@ -72,7 +70,9 @@ def main():
             _)_/LI
 
         """)
-        time.sleep(3)
+        time.sleep(2)
+        print("Your mission is to defeat the Mudhorn. You both have 50 health and 50 attack points! Whoever runs out of health first will lose the battle..")
+        time.sleep(2)
         main_grogu()
     elif game_choice == '2':
         print(""" You have selected to play as Mando.
@@ -91,6 +91,7 @@ def main():
     ~-._____/___:__(``/| |
          """)
         time.sleep(2)
+        print("Your mission is to defeat Moff Gideon. You will both start with 100 health and 100 attack points. The first one to run out of health will lose the battle.")
         main_mando()
     else:
         print("Please be sure to enter 1 or 2.")
@@ -156,10 +157,12 @@ def main_grogu():
                 print("You have successfully hidden behind Mando. While resting you recovered 10 attack points.")
                 time.sleep(2)
         elif user_choice == '5':
+            print("Grogu's Stats")
             print(grogu.health)  
             print(grogu.attack)
             time.sleep(2)
         elif user_choice == '6':
+            print("Mudhorn's Stats")
             print(f"Health: {mudhorn.health}")
             print(f"Attack: {mudhorn.attack}")
             time.sleep(2)
@@ -187,7 +190,7 @@ def main_grogu():
                 """)
             break
         elif mudhorn.health == 0:
-            print('You did it! You have demloshed the Mudhorn. The force is strong with you.')
+            print('You did it! You have demolished the Mudhorn. The force is strong with you.')
             time.sleep(1)
             print("""
                     .==.
@@ -220,11 +223,23 @@ def main_mando():
                 time.sleep(1)
             else:
                 random_number = random.randrange(11)
-                if random_number < 5:
+                if random_number < 6:
                     moffGideon.health_damage()
                     mando.attack_damage()
-                    print("You have used your Beskar Spear against Moff Gideon! He has taken 10 damage.")
+                    print("You have used your Beskar Spear against Moff Gideon! He has taken 10 health damage.")
                     time.sleep(1)
+                elif random_number >= 6 and random_number < 9:
+                    if moffGideon.attack > 10:
+                        mando.attack_damage()
+                        mando.health_damage()
+                        moffGideon.attack_damage()
+                        print("Moff Gideon blocks your attack and slices your arm. You take 10 health damage.")
+                        time.sleep(1)
+                    else:
+                        mando.attack_damage()
+                        moffGideon.health_damage()
+                        print("You have thrown Grogu at Moff Gideon. Moff Gideon takes 10 health damage.")
+                        time.sleep(1)
                 else:
                     mando.attack_damage()
                     print("Moff Gideon dodged your attack.")
@@ -244,7 +259,7 @@ def main_mando():
                 time.sleep(1)
         elif user_choice == '3':
             random_number = random.randrange(11)
-            if moffGideon.attack > 10:
+            if moffGideon.attack > 20:
                 if random_number < 6:
                     mando.health_damage()
                     moffGideon.attack_damage()
@@ -263,14 +278,15 @@ def main_mando():
                 time.sleep(1)
             else:
                 mando.hide()
-                moffGideon.attack_damage()
                 print("You have successfully hidden in a cave. While resting you recovered 10 attack points.")
                 time.sleep(1)
         elif user_choice == '5':
+            print("Mando's Stats")
             print(f"Health: {mando.health}")  
             print(f"Attack: {mando.attack}")
             time.sleep(1)
         elif user_choice == '6':
+            print("Moff Gideon's Stats")
             print(f"Health: {moffGideon.health}")
             print(f"Attack: {moffGideon.attack}")
             time.sleep(1)
