@@ -28,7 +28,7 @@ mando = Characters('Mando', 100, 100)
 moffGideon = Characters('Moff Gideon', 100, 100)
 
 
-def rules():
+def into():
     print("""
     
        ________________.  ___     .______
@@ -53,6 +53,7 @@ def rules():
     print("Please press 1 or 2 to selct you champion!")
 
 def main():
+    into()
     game_choice = input("""
     Please select which characters you'd like to fight!
     
@@ -123,6 +124,7 @@ def menu_grogu():
     3. Shield
     4. Hide
     5. Check Grogu Stats
+    6. Quit
 
     """)
 
@@ -134,6 +136,7 @@ def menu_mando():
     3. Shield
     4. Hide
     5. Check Mando's Stats
+    6. Quit
     
     """)
 
@@ -193,8 +196,11 @@ def main_grogu():
             print(f"Health: {grogu.health}")  
             print(f"Attack: {grogu.attack}")
             time.sleep(1.5)
+        elif user_choice == '6':
+            print("They don't actually have cookies on the Dark Side...")
+            break
         else:
-            print("Please be sure to enter a number 1-5.")
+            print("Please be sure to enter a number 1-6")
             time.sleep(1.5)
     
         if grogu.health == 0:
@@ -313,8 +319,11 @@ def main_mando():
             print(f"Health: {mando.health}")  
             print(f"Attack: {mando.attack}")
             time.sleep(1)
+        elif user_choice == '6':
+            print("They don't actually have cookies on the Dark Side...")
+            break
         else:
-            print("Please be sure to enter a number 1-5.")
+            print("Please be sure to enter a number 1-6.")
             time.sleep(1)
         if mando.health == 0:
             print('Game Over! Moff Gideon has defeated you!')
@@ -359,5 +368,4 @@ def main_mando():
         
     return
 
-rules()  
 main()
