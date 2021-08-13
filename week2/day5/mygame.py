@@ -116,21 +116,25 @@ def main():
 
 def menu_grogu():
     print("""
+
     Choose what to do!
     1. Attack
     2. Eat Frog
     3. Shield
     4. Hide
     5. Check Grogu Stats
+
     """)
 
 def menu_mando():
     print("""
+
     1. Attack Moff Gideon
     2. Eat Bone Soup
     3. Shield
     4. Hide
     5. Check Mando's Stats
+    
     """)
 
 def main_grogu():
