@@ -28,7 +28,7 @@ mando = Characters('Mando', 100, 100)
 moffGideon = Characters('Moff Gideon', 100, 100)
 
 
-def rules():
+def into():
     print("""
     
        ________________.  ___     .______
@@ -53,6 +53,7 @@ def rules():
     print("Please press 1 or 2 to selct you champion!")
 
 def main():
+    into()
     game_choice = input("""
     Please select which characters you'd like to fight!
     
@@ -367,5 +368,4 @@ def main_mando():
         
     return
 
-rules()  
 main()
