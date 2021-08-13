@@ -188,7 +188,15 @@ def main_grogu():
 
 
                 """)
-            break
+            replay_option = input("Would you like to play again? yes or no?")
+            if replay_option == 'yes':
+                main()
+            elif replay_option == 'no':
+                print("Thanks for playing. See you next time!")
+                break
+            else:
+                print("Please type yes or no in all lowercase.")
+                print(replay_option)
         elif mudhorn.health == 0:
             print('You did it! You have demolished the Mudhorn. The force is strong with you.')
             time.sleep(1)
@@ -208,7 +216,15 @@ def main_grogu():
                 
                 
                 """)
-            break
+            replay_option = input("Would you like to play again? yes or no?")
+            if replay_option == 'yes':
+                main()
+            elif replay_option == 'no':
+                print("Thanks for playing. See you next time!")
+                break
+            else:
+                print("Please type yes or no in all lowercase.")
+                print(replay_option)
 
         
     return
@@ -311,7 +327,15 @@ def main_mando():
 
 
                         """)
-            break
+            replay_option = input("Would you like to play again? yes or no?")
+            if replay_option == 'yes':
+                main()
+            elif replay_option == 'no':
+                print("Thanks for playing. See you next time!")
+                break
+            else:
+                print("Please type yes or no in all lowercase.")
+                print(replay_option)
         elif moffGideon.health == 0:
             print('You have defeated Moff Gideon and now are the rightful owner of the DarkSaber!')
             time.sleep(2)
@@ -331,7 +355,15 @@ def main_mando():
             
             
             """)
-            break
+            replay_option = input("Would you like to play again? yes or no?")
+            if replay_option == 'yes':
+                main()
+            elif replay_option == 'no':
+                print("Thanks for playing. See you next time!")
+                break
+            else:
+                print("Please type yes or no in all lowercase.")
+                print(replay_option)
 
         
     return
