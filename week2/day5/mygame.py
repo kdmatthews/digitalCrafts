@@ -314,6 +314,7 @@ def main_mando():
                 else:
                     mando.health_damage()
                     print("You were too slow. Moff Gideon charged at you and knocked you over. You lose 10 health points.")
+                    time.sleep(1)
         elif user_choice == '5':
             print("Mando's Stats")
             print(f"Health: {mando.health}")  
