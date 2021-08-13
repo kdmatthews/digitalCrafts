@@ -1,14 +1,6 @@
 
 
 
-shopping_list = []
-
-menu = """
-1. create shopping list
-2. display shopping list
-3. add grocery item to list
-"""
-
 class Grocery_Store():
     def __init__(self, title, address):
         self.title = title
@@ -37,9 +29,8 @@ def menu():
 
 stores = []
 
-list_of_items = []
 
-dictionary = {}
+
 user_choice = ''
 
 def main_menu():
@@ -59,7 +50,7 @@ def main_menu():
             else:
                 for i, store in enumerate(stores):
                     i += 1
-                    print(f"{i} - {store.title} ")
+                    print(f"{i}. {store.title}")
                 user_selection = int(input("Enter the number for the store you would like to add items to."))
                 if user_selection > 0 and user_selection <= len(stores):
                     selected_store = stores[user_selection -1]
