@@ -28,7 +28,7 @@ mando = Characters('Mando', 100, 100)
 moffGideon = Characters('Moff Gideon', 100, 100)
 
 
-def into():
+def intro():
     print("""
     
        ________________.  ___     .______
@@ -53,7 +53,7 @@ def into():
     print("Please press 1 or 2 to selct you champion!")
 
 def main():
-    into()
+    intro()
     game_choice = input("""
     Please select which characters you'd like to fight!
     
@@ -93,13 +93,13 @@ def main():
             |~xxxxx~| ||
             |_  #  _| ||
         .------`-#-'-----.
-    (___|\_________/|_.`.
+       (___|\_________/|_.`.
         /  | _________ | | |
-    /   |/   _|_   \| | |
-    /   /X|  __|__  |/ `.|
-    (  --< \\/    _\//|_ |`.
-    `.    ~----.-~=====,:=======
-    ~-._____/___:__(``/| |
+       /   |/   _|_   \| | |
+      /   /X|  __|__  |/ `.|
+      (  --< \\/    _\//|_ |`.
+       `.    ~----.-~=====,:=======
+       ~-._____/___:__(``/| |
          """)
         time.sleep(2)
         print("""
