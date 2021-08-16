@@ -1,0 +1,58 @@
+html {
+    background-color: rgb(250, 216, 216);
+}
+.opening h1 {
+    color: navy;
+}
+.opening p {
+    color: forestgreen;
+}
+.opening h2 {
+    color: green;
+}
+
+.animal {
+    background-color: gold;
+    height: 50px;
+    width: 220px;
+}
+.Hawaii h1 {
+    color: olivedrab;
+}
+.Hawaii h2{
+    color: goldenrod;
+}
+.Hawaii h3{
+    color:indianred;
+}
+.favoriteanimal {
+    background-color: peru;
+}
+
+.Bahamas h1{
+    color:saddlebrown
+}
+.Bahamas p {
+    color: brown;
+}
+.Gislands h1{
+    color:crimson
+}
+.Gislands h2{
+    color:orange;
+}
+.Maldives h1{
+    color:navy;
+}
+.Maldives p {
+    color: blue;
+}
+.Jamaica h1{
+    color: orchid;
+}
+.Jamaica h2 {
+    color:rebeccapurple;
+}
+.Jamaica h3 {
+    color:slateblue;
+}

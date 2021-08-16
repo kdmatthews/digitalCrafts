@@ -1,0 +1,18 @@
+.form-container {
+    background-color: rgb(248, 241, 243);
+}
+.username-container {
+    height: 50px;
+    width:200px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+.submit-button {
+    height: 24px;
+    width: 100px;
+    background-color: navy;
+    border-radius: 5px;
+    color: #fbfbfb;
+    border: none;
+}

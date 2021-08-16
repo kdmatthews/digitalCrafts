@@ -28,7 +28,9 @@
 
 # DIV tag (div)
 - a div is a generic container and it is used for flow content. 
+- takes shape of elements
 - by default, a div takes on the form of it's contents
+-height zero when created
 
 # CSS (cascading style sheets)
 - HTML element
