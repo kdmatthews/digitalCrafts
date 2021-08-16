@@ -1,0 +1,32 @@
+.google {
+    display: block;
+    margin-top: 70px;
+    margin-left: auto;
+    margin-right: auto;
+    width: 35%;
+    height: 50%;
+}
+.searchbox{
+    border-radius: 25px;
+    padding: 5px;
+    width: 500px;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    border-color: grey;
+}
+.images {
+    position:absolute;
+    top:0;
+    right:60px;
+    color: grey;
+    text-decoration: none;
+}
+
+.gmail {
+    position:absolute;
+    top:0;
+    right:130px;
+    color: grey;
+    text-decoration: none;
+    }
