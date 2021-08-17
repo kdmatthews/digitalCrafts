@@ -1,0 +1,36 @@
+.main-container {
+    background-color: darkcyan;
+    height: 100vh;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    /* align-items: center; */
+    align-content: center;
+
+}
+h1 {
+    background-color: blueviolet;
+    width: 200px;
+    margin: 5px;
+    flex-shrink: 3;
+    
+}
+   
+h2 {
+    flex-grow: 2;
+    background-color: chartreuse; 
+    width: 200px;
+    margin: 5px;
+    
+   
+    
+}
+
+button {
+    width: 200px;
+    height: 30px;
+    margin: 5px;
+    background-color: chocolate;
+}
+

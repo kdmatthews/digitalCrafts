@@ -1,0 +1,39 @@
+.main {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.header {
+    background-color: darkcyan;
+    width: 500px;
+    height: 100px;
+    margin: 0px; 
+}
+.sidebar {
+    background-color: darkmagenta;
+    width: 500px;
+    height: 100px;
+  
+
+}
+.ads {
+    background-color: deeppink;
+    
+    width: 500px;
+    height: 100px;
+    
+    
+}
+.content {
+    background-color: dodgerblue;
+    width: 500px;
+    height: 100px;
+    
+}
+.footer{
+    background-color:mediumspringgreen;
+    width:500px;
+    height: 100px;
+    
+}
