@@ -1,6 +1,6 @@
 .main {
     display: flex;
-    flex-wrap: wrap;
+    /* flex-wrap: wrap; */
     background-color: #ACEEF3;
     height: 650px;
 }
