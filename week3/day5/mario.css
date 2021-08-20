@@ -1,0 +1,20 @@
+.container{
+    background-color: white;
+    grid-template-areas: 
+    "white white white red red red red red red white white white"
+    "white white red red red red red red red red white white"
+    "white white brown brown brown tan tan black tan white white white"
+    "white brown tan brown tan tan tan black tan tan tan white"
+    "white brown tan brown brown tan tan tan black tan tan tan"
+    "white brown brown tan tan tan tan black black black black white"
+    "white white tan tan tan tan tan tan tan tan white white"
+    "white white red red blue red red red white white white white"
+    "white red red red blue red red blue red red red white"
+    "red red red red blue blue blue blue blue red red red red"
+    "tan tan red blue yellow blue blue yellow blue red tan tan"
+    "tan tan tan blue blue blue blue blue blue tan tan tan"
+    "tan tan blue blue blue blue blue blue blue blue tan tan"
+    "white white blue blue blue white white blue blue blue white white"
+    "white brown brown brown white white white white brown brown brown white"
+    "brown brown brown brown white white white white brown brown brown brown"
+}
