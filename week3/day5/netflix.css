@@ -57,7 +57,7 @@ h4{
     font-size: 25px;
 }
 .container{
-    background-color: #060608;
+    background-color: #1e1e25;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: auto;
@@ -162,3 +162,6 @@ h4{
     grid-row: 6/7;
     grid-column: 4/5;
 }
+.loki:hover,.avatar:hover,.starwars:hover,.office:hover,.avengers:hover,.harrypotter:hover,.parksandrec:hover,.fastandfurious:hover{
+    transform: 200ms ease;
+} 

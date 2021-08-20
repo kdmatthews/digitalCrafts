@@ -1,20 +1,55 @@
-.container{
-    background-color: white;
+.container {
+    display: grid;
+    height: 700px;
+    width: 100%;
     grid-template-areas: 
-    "white white white red red red red red red white white white"
-    "white white red red red red red red red red white white"
-    "white white brown brown brown tan tan black tan white white white"
-    "white brown tan brown tan tan tan black tan tan tan white"
-    "white brown tan brown brown tan tan tan black tan tan tan"
-    "white brown brown tan tan tan tan black black black black white"
-    "white white tan tan tan tan tan tan tan tan white white"
-    "white white red red blue red red red white white white white"
-    "white red red red blue red red blue red red red white"
-    "red red red red blue blue blue blue blue red red red red"
-    "tan tan red blue yellow blue blue yellow blue red tan tan"
-    "tan tan tan blue blue blue blue blue blue tan tan tan"
-    "tan tan blue blue blue blue blue blue blue blue tan tan"
-    "white white blue blue blue white white blue blue blue white white"
-    "white brown brown brown white white white white brown brown brown white"
-    "brown brown brown brown white white white white brown brown brown brown"
+        "wh wh wh r r r r r wh wh wh"
+        "wh wh r r r r r r r r wh wh"
+        "wh wh br br br t t bl t wh wh wh"
+        "wh br t br t t bl t t t wh"
+        "wh br t br br t t t bl t t t"
+        "wh br br t t t t bl bl bl bl wh"
+        "wh wh t t t t t t t t wh wh" 
+        "wh wh r r bu r r r wh wh wh wh"
+        "wh r r r bu r r bu r r r wh"
+        "r r r r bu bu bu bu bu r r r r"
+        "t t r bu ye bu bu ye bu r t t"
+        "t t t bu bu bu bu bu bu t t t"
+        "t t bu bu bu bu bu bu bu bu t t"
+        "wh wh bu bu bu wh wh bu bu bu wh wh"
+        "wh br br br wh wh wh wh wh br br br wh"
+        "br br br br wh wh wh wh br br br br";
+    border:2px solid black;
+    grid-template-columns:repeat(12, 1px);
+    grid-template-rows:repeat(16, 1px);
+     
+}
+
+.redsquare {
+    grid-area: r;
+    background-color: red;
+}
+.brownsquare {
+    grid-area: br;
+    background-color: brown;
+}
+.bluesquare{
+    grid-area:bu;
+    background-color: blue;
+}
+.yellowsquare{
+    grid-area: ye;
+    background-color: yellow;
+}
+.tansquare{
+    grid-area: t;
+    background-color: tan;
+}
+.blacksquare {
+    grid-area: bl;
+    background-color: black;
+}
+.whitesquare{
+    grid-area: wh;
+    background-color: white;
 }

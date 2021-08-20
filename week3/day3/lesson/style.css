@@ -21,9 +21,9 @@
         "sidebar body body body ad"
         "sidebar body body body ad"
         "footer footer footer footer footer";
-    grid-template-columns: 50px 1fr 1fr 1fr 50px;
+    grid-template-columns: repeat(12, 3px);
     /* grid-template-rows: auto; */
-    grid-template-rows: 60px 100px 100px 100px 40px;
+    grid-template-rows: repeat(16, 3px);
     border: 2px solid blue;
     margin: 5px;
   }
