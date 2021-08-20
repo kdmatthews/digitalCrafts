@@ -1,0 +1,17 @@
+body{
+    border: 3px solid black;
+}
+.row{
+    margin-top: 100px;
+    padding-bottom: 100px;
+    border-bottom: 3px solid black;
+}
+.row-footer{
+    border-top: 3px solid black;
+    margin-top: 5-x;
+    padding-bottom: 5px;
+}
+.list-group-item{
+    border: none;
+}
+
