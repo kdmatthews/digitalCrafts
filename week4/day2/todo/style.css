@@ -52,3 +52,22 @@ li {
     font-family: 'Patrick Hand', cursive;
     font-family: 'Play', sans-serif;
 }
+
+@media screen and (max-width: 670px) {
+    body{
+        margin-top: 50px;
+        margin-bottom: 50px;
+        height: 100vh;
+        width: 250px;
+    }
+    h1{
+        font-size: 40px;
+
+    }
+    li{
+        font-size: 30px;
+    }
+    .todo-items{
+        font-size: 20px;
+    }
+}
