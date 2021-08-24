@@ -3,19 +3,19 @@ const input = document.querySelector('.todo-items');
 const submit = document.querySelector('.submit-button');
 
 const header = document.createElement('h1');
-const directions = document.createElement('h3');
+// const directions = document.createElement('h3');
 const list = document.createElement('p');
 
 header.innerHTML = 'To-Do List';
-directions.innerHTML = 'Please enter the items you would like to add to your list.'
+// directions.innerHTML = 'Please enter the items you would like to add to your list.'
 
-container.append(header, directions);
+container.append(header);
 
 
 function inputItems(){
     const valueOfInput = input.value
     // const todolist = document.querySelector('.todolist')
-    let item = document.createElement("li")
+    const item = document.createElement("li")
     item.append(valueOfInput)
     container.append(item)
     
