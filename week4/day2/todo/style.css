@@ -24,7 +24,7 @@ li {
 }
 .submit-button{
     text-align: center;
-    background-color: #F24E70;
+    background-color: #FBBC54;
     border: none;
     border-radius: 5px;
     padding: 7px 30px;
@@ -37,7 +37,7 @@ li {
 }
 .removeall{
     text-align: center;
-    background-color: #B4F8C8;
+    background-color: #F24E70 ;
     border: none;
     border-radius: 5px;
     padding: 10px 50px;
