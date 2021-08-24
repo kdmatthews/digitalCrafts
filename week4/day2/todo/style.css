@@ -1,8 +1,29 @@
-/* .main-container{
-    width: 700px;
+html {
+    background-color: pink;
+}
+.main-container{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    width: 300px;
+    margin-left: 150px;
+    border: 2px solid red; 
+    /* position: fixed; /* or absolute */
+    /* top: 40%;
+    left: 25%;
+    background-color: aqua;
+    text-align: center;
+} */ 
+/* .secondary{
+    text-align: center;
+    position: fixed; /* or absolute */
+    /* top: 50%;
+    left: 50%; */
+} */
+li {
+    font-size: 30px;
+}
+.submitbutton{
     display: flex;
     justify-content: center;
-    margin: 30px;
-    align-items: center;
-    vh: 100%
-} */
+}
