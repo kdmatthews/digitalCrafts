@@ -18,6 +18,7 @@ async function getFoxPics(){
     return jsonFox;
 }
 
+
 const foxButton = document.querySelector(".get-fox-button");
 foxButton.addEventListener("click", () => getFoxPics());
 

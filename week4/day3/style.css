@@ -1,0 +1,17 @@
+html{
+    background-color:grey;
+}
+body{
+    text-align: center;
+    margin: 100px;
+}
+h1 {
+    font-size: 50px;
+}
+.random-cat{
+    border-radius: 5px;
+    background-color: hotpink;
+    font-size: 30px;
+    border-style: none;
+    padding: 10px;
+}
