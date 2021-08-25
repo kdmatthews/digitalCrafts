@@ -7,7 +7,7 @@ const second = document.querySelector('.second');
 
 const header = document.createElement('h1');
 // const directions = document.createElement('h3');
-const list = document.createElement('p');
+// const list = document.createElement('p');
 
 
 header.innerHTML = 'To Do List';
@@ -32,13 +32,14 @@ function removeAll(){
     container.append(header);
 }
 
-function resetInput(){
-    document.querySelector(".todo-items").value=null;
+// function resetInput(){
+//     document.querySelector(".todo-items").value=null;
     
-};
+// };
 submit.addEventListener("click", () => {
     inputItems();
     document.querySelector(".todo-items").value=null;
 });
+document.selectQu.addEventListener()
 // submit.onclick = inputItems;
 remove.onclick = removeAll;
