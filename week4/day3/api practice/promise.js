@@ -1,3 +1,5 @@
+import apiKey from "./api";
+const api = 
 console.log('hello')
 async function getFoxPics(){
     // 1. create a variable
