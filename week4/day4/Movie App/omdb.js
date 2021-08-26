@@ -10,7 +10,7 @@ async function movieSearch(){
     const jsonMovies = await fetchMovies.json();
     console.log("hello");
 
-    for (const movie in jsonMovies.Search){
+    for (const movie of jsonMovies.Search){
         // const movieDiv = document.createElement("div")
         const titleMovie = document.createElement('h2');
         titleMovie.innerText = movie.Title;
