@@ -1,10 +1,12 @@
 html{
-    background-color: black;
-    color: white;
+    background-color: #0E050F;
+    color: #C3C7DF;
+    font-family: 'Rampart One', cursive;
+
 }
 
 .main-container{
-    background-color: darkslategray;
+    background-color: #170B3B;
     display: grid;
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
@@ -12,21 +14,36 @@ html{
     margin-bottom: 90px;
     margin-left: 90px;
     margin-right: 90px;
+    border-radius: 10px;
 
 
 }
 
 .search {
     text-align: center;
-    margin-top: 90px;
+    margin-top: 50px;
     margin-bottom: 20px;
     margin-left: 90px;
     margin-right: 90px;
-    background-color: cadetblue;
+    background-color: #2D1674;
     padding: 10px;
     padding-bottom: 40px;
     font-size: 23px;
+    border-radius: 15px;
 }
+
+.search-button{
+    background-color: #170B3B;
+    border-radius: 5px;
+    width: 100px;
+    height: 30px;
+    color: #C3C7DF;
+}
+/* .input{
+    border-radius: 2px;
+    width: 300px;
+    height: 17px;
+} */
 
 
 @media screen and (max-width: 1200px) {
@@ -38,7 +55,7 @@ html{
     }
 }
 
-@media screen and (max-width: 800px){
+@media screen and (max-width: 870px){
     .main-container{
         display: grid;
         grid-template-columns: 1fr;
