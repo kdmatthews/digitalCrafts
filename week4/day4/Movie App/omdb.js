@@ -1,8 +1,12 @@
 const apiKey = "c3ed5183";
 const omdburl = `https://www.omdbapi.com/?apikey=${apiKey}`;
 
-const movieContainer = document.querySelector('.main-container')
+const mainContainer = document.querySelector('.main-container')
 const searchButton = document.querySelector('.search-button')
+
+const movieContainer = document.createElement("div")
+movieContainer.className = movieContainer
+const movieLocation = document.querySelector(".movieContainer")
 
 async function movieSearch(){
     const input = document.querySelector(".input").value;
@@ -21,7 +25,7 @@ async function movieSearch(){
         const yearMovie = document.createElement('h4');
         yearMovie.innerText = movie.Year;
 
-        movieContainer.append(titleMovie, posterMovie, yearMovie)
+        mainContainer.append(titleMovie, posterMovie, yearMovie)
     }
 }
 

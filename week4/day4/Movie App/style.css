@@ -1,0 +1,13 @@
+html{
+    background-color: black;
+    color: white;
+}
+
+.main-container{
+    background-color: darkslategray;
+    display: grid;
+    text-align: center;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap: 5px;
+}
+
