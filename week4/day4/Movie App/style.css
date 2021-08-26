@@ -8,6 +8,38 @@ html{
     display: grid;
     text-align: center;
     grid-template-columns: 1fr 1fr 1fr;
-    gap: 5px;
+    margin-top: 10px;
+    margin-bottom: 90px;
+    margin-left: 90px;
+    margin-right: 90px;
+
+
 }
 
+.search {
+    text-align: center;
+    margin-top: 90px;
+    margin-bottom: 20px;
+    margin-left: 90px;
+    margin-right: 90px;
+    background-color: cadetblue;
+}
+
+
+@media screen and (max-width: 1200){
+    .main-container{
+        display: grid;
+        grid-template-rows: 1fr 1fr;
+        gap: 2px;
+        
+    }
+}
+
+@media screen and (max-width: 700){
+    .main-container{
+        display: grid;
+        grid-template-rows: 1fr;
+        gap: 2px
+        
+    }
+}

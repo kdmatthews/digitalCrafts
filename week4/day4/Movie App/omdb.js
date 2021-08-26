@@ -4,8 +4,7 @@ const omdburl = `https://www.omdbapi.com/?apikey=${apiKey}`;
 const mainContainer = document.querySelector('.main-container')
 const searchButton = document.querySelector('.search-button')
 
-const movieContainer = document.createElement("div")
-movieContainer.className = movieContainer
+
 const movieLocation = document.querySelector(".movieContainer")
 
 async function movieSearch(){
@@ -13,19 +12,29 @@ async function movieSearch(){
     const fetchMovies = await fetch(omdburl + `&s=${input}`);
     const jsonMovies = await fetchMovies.json();
     console.log("hello");
-
+    
+   
     for (const movie of jsonMovies.Search){
-        // const movieDiv = document.createElement("div")
+        const movieContainer = document.createElement("div")
+        movieContainer.className = "movieContainer";
         const titleMovie = document.createElement('h2');
-        titleMovie.innerText = movie.Title;
+        titleMovie.innerHTML = "";
         
         const posterMovie = document.createElement('img');
-        posterMovie.src = movie.Poster;
+        posterMovie.src = "";
+        
 
         const yearMovie = document.createElement('h4');
-        yearMovie.innerText = movie.Year;
+        yearMovie.innerHTML = "";
+        movieContainer.append(titleMovie, posterMovie, yearMovie);
 
-        mainContainer.append(titleMovie, posterMovie, yearMovie)
+        titleMovie.innerText = movie.Title;
+        posterMovie.src = movie.Poster;
+        yearMovie.innerText = movie.Year;
+        
+
+        movieContainer.append(titleMovie, posterMovie, yearMovie);
+        mainContainer.append(movieContainer);
     }
 }
 

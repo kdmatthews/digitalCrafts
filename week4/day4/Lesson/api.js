@@ -271,7 +271,8 @@ async function fetchPokemonData(){
                 element.append(cardImg);
                 cardImg.onmouseover = () => console.log("hover over");
                 cardImg.onmouseout = () => console.log("hoverout");
-                } 
+    
+            } 
   
         // const spritesEntry = singleSprites.sprites;
         // const 
