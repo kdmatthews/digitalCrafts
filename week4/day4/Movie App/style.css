@@ -23,23 +23,26 @@ html{
     margin-left: 90px;
     margin-right: 90px;
     background-color: cadetblue;
+    padding: 10px;
+    padding-bottom: 40px;
+    font-size: 23px;
 }
 
 
-@media screen and (max-width: 1200){
+@media screen and (max-width: 1200px) {
     .main-container{
         display: grid;
-        grid-template-rows: 1fr 1fr;
+        grid-template-columns: 1fr 1fr;
         gap: 2px;
         
     }
 }
 
-@media screen and (max-width: 700){
+@media screen and (max-width: 800px){
     .main-container{
         display: grid;
-        grid-template-rows: 1fr;
-        gap: 2px
+        grid-template-columns: 1fr;
+        gap: 2px;
         
     }
 }

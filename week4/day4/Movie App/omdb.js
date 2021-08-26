@@ -8,6 +8,7 @@ const searchButton = document.querySelector('.search-button')
 const movieLocation = document.querySelector(".movieContainer")
 
 async function movieSearch(){
+    mainContainer.innerHTML = "";
     const input = document.querySelector(".input").value;
     const fetchMovies = await fetch(omdburl + `&s=${input}`);
     const jsonMovies = await fetchMovies.json();
@@ -15,13 +16,14 @@ async function movieSearch(){
     
    
     for (const movie of jsonMovies.Search){
+        
         const movieContainer = document.createElement("div")
         movieContainer.className = "movieContainer";
         const titleMovie = document.createElement('h2');
-        titleMovie.innerHTML = "";
+        
         
         const posterMovie = document.createElement('img');
-        posterMovie.src = "";
+        posterMovie.innerHTML = "";
         
 
         const yearMovie = document.createElement('h4');
@@ -35,7 +37,10 @@ async function movieSearch(){
 
         movieContainer.append(titleMovie, posterMovie, yearMovie);
         mainContainer.append(movieContainer);
+        
     }
 }
+
+
 
 searchButton.addEventListener("click", () => movieSearch());
