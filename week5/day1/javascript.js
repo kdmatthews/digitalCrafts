@@ -6,7 +6,7 @@ async function searchBooks(){
     searchContainer.innerHTML = ""
     const searchInput = document.querySelector(".input").value;
 
-    const bookData = await fetch (`https://www.googleapis.com/books/v1/volumes?q=${searchInput}&key=AIzaSyB5C4BKB9gVxy93aRG6oJkqUw25PqZYA7Y`)
+    const bookData = await fetch (`https://www.googleapis.com/books/v1/volumes?q=kindergarten${searchInput}&key=AIzaSyB5C4BKB9gVxy93aRG6oJkqUw25PqZYA7Y`)
     const bookDataJson = await bookData.json();
     
     
@@ -21,15 +21,20 @@ async function searchBooks(){
         console.log(item)
         const imageLink = document.createElement('img')
         imageLink.src = volumeInfo.imageLinks.thumbnail
-        console.log(item.saleInfo.buyLink)
-        const buyLink = document.createElement('a')
-        buyLink.href = item.saleInfo.buyLink
-        buyLink.innerHTML = "Buy Book Here"
-        console.log(buyLink)
+        
 
        
        
-        bookDataContainer.append(title, imageLink, authors, buyLink);
+        bookDataContainer.append(title, imageLink, authors);
+        const buyLink = document.createElement('a')
+        buyLink.href = item.saleInfo.buyLink
+        
+        console.log(buyLink)
+        const window = "window.location.href"
+        if (buyLink.href != `http://127.0.0.1:5500/undefined`){
+            buyLink.innerHTML = "Buy Book Here"
+            bookDataContainer.append(buyLink)
+        }
         searchContainer.append(bookDataContainer);
         
     }
