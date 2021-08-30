@@ -1,4 +1,4 @@
-const searchContainer = document.querySelector(".search-books");
+const searchContainer = document.querySelector(".main");
 const searchButton = document. querySelector(".search-button")
 const apikey = `AIzaSyB5C4BKB9gVxy93aRG6oJkqUw25PqZYA7Y`
 
@@ -11,7 +11,8 @@ async function searchBooks(){
     
     
     for (const item of bookDataJson.items){
-        
+        const bookDataContainer = document.createElement('div')
+        bookDataContainer.className = "book-data"
         const volumeInfo = item.volumeInfo
         const title = document.createElement('h2')
         title.innerHTML = volumeInfo.title
@@ -28,9 +29,8 @@ async function searchBooks(){
 
        
        
-        
-
-        searchContainer.append(title, authors, imageLink,buyLink)
+        bookDataContainer.append(title, imageLink, authors, buyLink);
+        searchContainer.append(bookDataContainer);
         
     }
 }
