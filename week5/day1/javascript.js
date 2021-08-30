@@ -1,10 +1,11 @@
 const searchContainer = document.querySelector(".search-books");
 const searchButton = document. querySelector(".search-button")
+const apikey = `AIzaSyB5C4BKB9gVxy93aRG6oJkqUw25PqZYA7Y`
 
 async function searchBooks(){
     searchContainer.innerHTML = ""
     const searchInput = document.querySelector(".input").value;
-    const apikey = `AIzaSyB5C4BKB9gVxy93aRG6oJkqUw25PqZYA7Y`
+
     const bookData = await fetch (`https://www.googleapis.com/books/v1/volumes?q=${searchInput}&key=AIzaSyB5C4BKB9gVxy93aRG6oJkqUw25PqZYA7Y`)
     const bookDataJson = await bookData.json();
     
@@ -16,15 +17,27 @@ async function searchBooks(){
         title.innerHTML = volumeInfo.title
         const authors = document.createElement('h3')
         authors.innerHTML = volumeInfo.authors
-        console.log(volumeInfo)
+        console.log(item)
         const imageLink = document.createElement('img')
         imageLink.src = volumeInfo.imageLinks.thumbnail
+        console.log(item.saleInfo.buyLink)
+        const buyLink = document.createElement('a')
+        buyLink.href = item.saleInfo.buyLink
+        buyLink.innerHTML = "Buy Book Here"
+        console.log(buyLink)
+
+       
+       
         
 
-        searchContainer.append(title, authors, imageLink)
+        searchContainer.append(title, authors, imageLink,buyLink)
         
     }
 }
        
-
 searchButton.addEventListener("click", () => searchBooks());
+
+// const getBooks = document.querySelector('.getBooks')
+// async function getSpecificBooks(){
+//     const book1 = await fetch (`https://www.googleapis.com/books/v1/volumes/zyTCAlFPjgYC?key=${apikey}`)
+// }
