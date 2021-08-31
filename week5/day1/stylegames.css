@@ -365,34 +365,37 @@ button {
     border-radius: 30px;
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 1600px) {
     .game-links{
-        display: grid;
-        grid-template-columns: 1fr 1fr 1fr;
-        grid-template-rows: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
     }
     .opening h1{
-        font-size: 60px;
+        font-size: 65px;
     }
+
 }
 
-@media screen and (max-width: 350px){
+@media screen and (max-width: 1200px){
     .game-links{
         display: grid;
         grid-template-columns: 1fr 1fr;
-        grid-template-rows: auto;
     }
     .opening h1{
-        font-size: 40px;
+        font-size: 50px;
     }
 }
-@media screen and (max-width: 200px){
+@media screen and (max-width: 800px){
     .game-links{
         display: grid;
         grid-template-columns: 1fr;
-        grid-template-rows: auto;
+        
     }
     .opening h1{
-        font-size: 40px;
+        font-size: 30px;
+    }
+    .nav{
+        font-size: 20px;
     }
 }
+
