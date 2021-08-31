@@ -222,10 +222,101 @@ img:hover{
     background-color:lightsalmon;
     height: 200px;
     font-size: 60px;
+    text-align: center;
 }
 .videos h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 30px;
+    margin: 60px;
+}
+.movePage {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    justify-content: space-evenly;
+}
+.movePage button{
+    height: 100px;
+    width: 400px;
+    font-size: 40px;
+    border-radius: 30px;
+    border: none;
+    color:white;
+    background-color: lightpink;
+}
+
+@media screen and (max-width: 2000px){
+    .movie{
+        height: 900px;
+    }
+}
+
+@media screen and (max-width: 1700px){
+    .movie{
+        height: 700px;
+        margin-left: 150px; 
+    }
+    .movePage button{
+        width: 300px;
+        font-size: 30px;
+    }
+}
+
+@media screen and (max-width: 1200px){
+    .movie{
+        height: 500px;
+        margin-left: 100px; 
+    }
+    .movePage button{
+        width: 250px;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 900px){
+    .movie{
+        height: 400px;
+        margin-left: 80px; 
+    }
+    .movePage button{
+        width: 200px;
+        font-size: 30px;
+    }
+}
+@media screen and (max-width: 600px){
+    .movie{
+        height: 300px;
+        margin-left: 60px; 
+    }
+    .movePage button{
+        width: 100px;
+        font-size: 25px;
+    }
+}
+@media screen and (max-width: 400px){
+    .movie{
+        height: 200px;
+        margin-left: 40px; 
+    }
+    .movePage button{
+        width: 70px;
+        height: 45px;
+        font-size: 15px;
+    }
+    .nav {
+        font-size: 9px;
+    }
+    .videos h1{
+        font-size: 40px;
+        margin: 10px;
+      
+    }
+    .videos h2{
+        margin: 5px;
+        margin-bottom: 10px;
+    }
+    .title-video h1{
+        font-size: 50px;
+    }
+    }
 }
