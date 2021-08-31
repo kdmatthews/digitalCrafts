@@ -26,7 +26,8 @@ button {
     width: 200px;
     border-radius: 30px;
     margin: 20px;
-    background-color: white;
+    background-color: lightgreen;
+    border: none;
 }
 
 .opening {
