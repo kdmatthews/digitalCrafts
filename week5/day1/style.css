@@ -190,3 +190,42 @@ img:hover{
 .leveled-books{
     margin-top: 100px;
 }
+
+/* VIDEO */
+.title-video{
+    text-align: center;
+    margin-bottom: 50px;
+    background-image: url("https://images.unsplash.com/photo-1521989116480-519a01ffeb2d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8c2NyZWVuJTIweW91dHViZXxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-video h1{
+    font-size: 100px;
+    color: white;
+}
+
+.movie {
+    height: 1200px;
+    width: 80%;
+    margin-left: 250px;
+}
+.videos h1{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 60px;
+    background-color:lightsalmon;
+    height: 200px;
+    font-size: 60px;
+}
+.videos h2{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+}
