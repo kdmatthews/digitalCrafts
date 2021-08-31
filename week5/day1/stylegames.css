@@ -1,6 +1,7 @@
 .game-links{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: auto;
     margin: 30px;
     gap: 10px;
 }
@@ -8,6 +9,33 @@
     width:300px;
     height: 300px;
 }
+button {
+    height: 50px;
+    width: 200px;
+    border-radius: 30px;
+    margin: 20px;
+    background-color: white;
+}
+
+.opening {
+    background-image: url("https://images.unsplash.com/photo-1603354350317-6f7aaa5911c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80");
+    background-repeat: no-repeat;
+    background-size: cover;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: 50px;
+    color: navy;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    
+}
+.opening h1{
+    font-size: 100px;
+}
+
 
 .dreambox{
     background-color: transparent;
@@ -194,32 +222,6 @@
     border-radius: 30px;
 }
 
-button {
-    height: 50px;
-    width: 200px;
-    border-radius: 30px;
-    margin: 20px;
-    background-color: white;
-}
-
-.opening {
-    background-image: url("https://images.unsplash.com/photo-1603354350317-6f7aaa5911c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80");
-    background-repeat: no-repeat;
-    background-size: cover;
-    text-align: center;
-    margin-top: 50px;
-    margin-bottom: 50px;
-    color: navy;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    
-}
-.opening h1{
-    font-size: 100px;
-}
 
 
 
@@ -349,4 +351,36 @@ button {
     color: white;
     transform: rotateY(180deg);
     border-radius: 30px;
+}
+
+@media screen and (max-width: 700px){
+    .game-links{
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .opening h1{
+        font-size: 60px;
+    }
+}
+
+@media screen and (max-width: 350px){
+    .game-links{
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: auto;
+    }
+    .opening h1{
+        font-size: 40px;
+    }
+}
+@media screen and (max-width: 200px){
+    .game-links{
+        display: grid;
+        grid-template-columns: 1fr;
+        grid-template-rows: auto;
+    }
+    .opening h1{
+        font-size: 40px;
+    }
 }
