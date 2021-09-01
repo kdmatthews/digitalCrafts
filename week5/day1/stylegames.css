@@ -1,6 +1,7 @@
 
 .container-fluid{
     font-size: 30px;
+    font-family: 'Architects Daughter', cursive;
   
       
 
@@ -16,6 +17,7 @@ nav {
     grid-template-rows: auto;
     margin: 30px;
     gap: 10px;
+    font-family: 'Itim', cursive;
     
 }
 .game-links img{
@@ -48,6 +50,7 @@ button {
 }
 .opening h1{
     font-size: 100px;
+    font-family: 'Rampart One', cursive;
 }
 
 
