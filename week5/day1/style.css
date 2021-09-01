@@ -25,6 +25,7 @@ nav {
     align-items: center;
     justify-content: space-evenly;
     flex-wrap: wrap;
+    
 }
 .main-container h2{
     margin-top: 25px;
@@ -39,17 +40,17 @@ nav {
     width: 200px;
     font-size: 25px;
     border-radius: 25px;
-    background-color:white;
+    background-color: white
 }
 .box1{
-    background-color: lime;
+    background-color: #FF5412;
     height: 500px;
     width: 500px;
     border-radius: 50%;
     display: inline-block; 
     margin: 20px;
     text-align: center;
-    color: white
+    color: white;
 }
 .box2{
     background-color:hotpink;
@@ -59,10 +60,10 @@ nav {
     display: inline-block; 
     margin: 20px;
     text-align: center;
-    color:white;
+    color: white;
 }
 .box3{
-    background-color: aqua;
+    background-color: #3CBED0;
     height: 500px;
     width: 500px;
     border-radius: 50%;
@@ -84,7 +85,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
-    color:white;
+    color: #f0f8ff;
     
 }
 .main-heading h1{
@@ -102,13 +103,20 @@ nav {
 
 .book-searches{
     text-align: center;
+   
+    height: 300px;
+    border-radius: 100px;
+    
 }
    
 
 .book-searches h2{
-    margin-bottom: 50px;
-    font-size: 50px;
+    margin-top: 50px;
+    margin-bottom: 40px;
+    font-size: 60px;
+    color: #FF66E9;
 }
+
 
 .input{
     border: 3px solid #32e17c;
@@ -118,6 +126,7 @@ nav {
     padding: 0px 10px;
 
 }
+
 
 
 .main{
@@ -176,9 +185,19 @@ nav {
 }
 .title-books h1{
     font-size: 100px;
-    color: white;
+    color: #f0f8ff;
+   
 }
+.book-searches{
+    background-color: #252827;
+    margin-right: 200px;
+    margin-left: 200px;
 
+    
+}
+.book-searches h2{
+    padding-top: 50px;
+}
 .leveled-books img{
     width: 400px;
     height: 450px;
@@ -193,7 +212,7 @@ img:hover{
 }
 
 .leveled-books{
-    margin-top: 100px;
+    margin-top: 60px;
 }
 
 /* VIDEO */
@@ -211,7 +230,7 @@ img:hover{
 }
 .title-video h1{
     font-size: 100px;
-    color: white;
+    color: #f0f8ff;
 }
 
 .movie {
@@ -219,27 +238,41 @@ img:hover{
     width: 80%;
     margin-left: 250px;
 }
+.videos{
+    margin-bottom: 50px;
+}
 .videos h1{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 60px;
-    background-color:lightsalmon;
+    margin: 70px;
+    background-color:#01DEE6;
     height: 200px;
     font-size: 60px;
     text-align: center;
+    border-radius: 20px;
+    color: #f0f8ff;
 }
+.background2{
+    background-color: #252827;
+}
+
 .videos h2{
     display: flex;
     justify-content: center;
     align-items: center;
-    margin: 60px;
+    margin: 30px;
+    border: dashed 2px;
+    height: 100px;
+    border-radius: 20px;
+    
 }
 .movePage {
     display: flex;
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
+    
 }
 .movePage button{
     height: 100px;
@@ -247,8 +280,14 @@ img:hover{
     font-size: 40px;
     border-radius: 30px;
     border: none;
-    color:white;
-    background-color: lightpink;
+    color:#f0f8ff;
+    background-color: #FF66E9;
+}
+.background{
+    background-color: #444444;
+}
+html{
+    background-color: #444444;
 }
 
 @media screen and (max-width: 2000px){
