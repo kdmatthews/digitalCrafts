@@ -213,7 +213,7 @@ nav {
 
 
 .input{
-    border: 3px solid #FF5412;
+    border: 3px solid #FF66E9;
     height: 50px;
     width: 500px;
     border-radius: 50px;
@@ -243,7 +243,7 @@ nav {
 .title-books{
     text-align: center;
     margin-bottom: 50px;
-    background-image: url("https://images.unsplash.com/photo-1495446815901-a7297e633e8d?ixid=MnwxMjA3fDB8MHxzZWFyY2h8Mnx8Ym9va3N8ZW58MHx8MHx8&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60");
+    background-image: url("https://images.unsplash.com/photo-1607316484934-713e23cf5074?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTF8fGJvb2tzfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60");
     background-repeat: no-repeat;
     background-size: cover;
     width: 100%;
@@ -254,12 +254,12 @@ nav {
 }
 .title-books h1{
     font-size: 100px;
-    color: black;
+    color: white;
     font-family: 'Rampart One', cursive;
    
 }
 .book-searches{
-    background-color: #FF66E9;
+ 
     
     font-family: 'Itim', cursive;
 }
@@ -278,6 +278,11 @@ nav {
     height: 450px;
     margin: 9px;
 }
+.book-data img:hover{
+    width: 375px;
+    height: 450px;
+    transition: 0.3s ease;
+}
 img:hover{
     width: 500px;
     height: 550px;
@@ -290,7 +295,7 @@ img:hover{
 }
 .books h2{
     color: black;
-    background-color: #01DEE6;
+    background-color: #C6274D;
     font-size: 40px;
     padding: 60px;
     font-family: 'Itim', cursive;
@@ -301,7 +306,7 @@ img:hover{
     
 }
 .books h1{
-    background-color: #01DEE6;
+    background-color: #FBF608;
     padding: 40px;
     font-size: 60px;
     font-family: 'Itim', cursive;

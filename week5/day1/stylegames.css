@@ -32,20 +32,20 @@ button {
     width: 220px;
     border-radius: 30px;
     margin: 20px;
-    background-color: #45B08C;
+    background-color: #FBF608;
     border: none;
     font-size: 30px;
     color: #0B1320;
 }
 
 .opening {
-    background-image: url("https://images.unsplash.com/photo-1603354350317-6f7aaa5911c5?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=750&q=80");
+    background-image: url("https://images.unsplash.com/photo-1526430752879-b9eb53fbd772?ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTZ8fHRhYmxldHxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
     background-repeat: no-repeat;
     background-size: cover;
     text-align: center;
     
     margin-bottom: 50px;
-    color: black;
+    color: white;
     width: 100%;
     height: 400px;
     display: flex;
@@ -88,7 +88,7 @@ button {
 }
 
 .dreambox-back{
-    background-color: #48BCD1;
+    background-color: #01DEE6;
     color:#0B1320;
     transform: rotateY(180deg);
     border-radius: 30px;
@@ -121,7 +121,7 @@ button {
 }
 
 .khanAcademy-back{
-     background-color: #48BCD1;
+     background-color: #01DEE6;
   color: #0B1320;
   transform: rotateY(180deg);
   border-radius: 30px;
@@ -156,7 +156,7 @@ button {
 }
 
 .starfall-back{
-    background-color: #48BCD1;
+    background-color: #01DEE6;
     color: #0B1320;
     transform: rotateY(180deg);
     border-radius: 30px;
@@ -194,7 +194,7 @@ button {
 }
 
 .abcMouse-back{
-    background-color:#48BCD1;
+    background-color:#01DEE6;
     color: #0B1320;
     transform: rotateY(180deg);
     border-radius: 30px;
@@ -235,7 +235,7 @@ button {
 }
 
 .readingEggs-back{
-    background-color: #48BCD1;
+    background-color: #01DEE6;
     color: #0B1320;
     transform: rotateY(180deg);
     border-radius: 30px;
@@ -278,7 +278,7 @@ button {
 }
 
 .Istation-back{
-    background-color: #48BCD1;
+    background-color: #01DEE6;
     color: #0B1320;
     transform: rotateY(180deg);
     border-radius: 30px;
@@ -319,7 +319,7 @@ button {
 }
 
 .Iready-back{
-    background-color: #48BCD1;
+    background-color: #01DEE6;
     color: #0B1320;
     transform: rotateY(180deg);
     border-radius: 30px;
@@ -363,7 +363,7 @@ button {
 }
 
 .ABCYa-back{
-    background-color: #48BCD1;
+    background-color: #01DEE6;
     color: #0B1320;
     transform: rotateY(180deg);
     border-radius: 30px;
@@ -415,7 +415,7 @@ button {
     }
     .opening h1{
         font-size: 60px;
-        color: black
+        
     }
     .nav{
         font-size: 20px;
@@ -501,7 +501,7 @@ button {
     
     .opening h1{
         font-size: 45px;
-        color: black
+        
     }
     .nav{
         font-size: 13px;
