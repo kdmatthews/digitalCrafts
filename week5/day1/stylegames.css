@@ -32,9 +32,10 @@ button {
     width: 220px;
     border-radius: 30px;
     margin: 20px;
-    background-color: lightgreen;
+    background-color: #45B08C;
     border: none;
     font-size: 30px;
+    color: #0B1320;
 }
 
 .opening {
@@ -87,8 +88,8 @@ button {
 }
 
 .dreambox-back{
-    background-color: dodgerblue;
-    color: white;
+    background-color: #48BCD1;
+    color:#0B1320;
     transform: rotateY(180deg);
     border-radius: 30px;
 }
@@ -120,8 +121,8 @@ button {
 }
 
 .khanAcademy-back{
-     background-color: dodgerblue;
-  color: white;
+     background-color: #48BCD1;
+  color: #0B1320;
   transform: rotateY(180deg);
   border-radius: 30px;
 }
@@ -155,8 +156,8 @@ button {
 }
 
 .starfall-back{
-    background-color: dodgerblue;
-    color: white;
+    background-color: #48BCD1;
+    color: #0B1320;
     transform: rotateY(180deg);
     border-radius: 30px;
 }
@@ -193,8 +194,8 @@ button {
 }
 
 .abcMouse-back{
-    background-color: dodgerblue;
-    color: white;
+    background-color:#48BCD1;
+    color: #0B1320;
     transform: rotateY(180deg);
     border-radius: 30px;
 }
@@ -234,8 +235,8 @@ button {
 }
 
 .readingEggs-back{
-    background-color: dodgerblue;
-    color: white;
+    background-color: #48BCD1;
+    color: #0B1320;
     transform: rotateY(180deg);
     border-radius: 30px;
 }
@@ -277,8 +278,8 @@ button {
 }
 
 .Istation-back{
-    background-color: dodgerblue;
-    color: white;
+    background-color: #48BCD1;
+    color: #0B1320;
     transform: rotateY(180deg);
     border-radius: 30px;
 }
@@ -318,8 +319,8 @@ button {
 }
 
 .Iready-back{
-    background-color: dodgerblue;
-    color: white;
+    background-color: #48BCD1;
+    color: #0B1320;
     transform: rotateY(180deg);
     border-radius: 30px;
 }
@@ -362,8 +363,8 @@ button {
 }
 
 .ABCYa-back{
-    background-color: dodgerblue;
-    color: white;
+    background-color: #48BCD1;
+    color: #0B1320;
     transform: rotateY(180deg);
     border-radius: 30px;
 }
@@ -374,7 +375,7 @@ button {
     grid-template-columns: 1fr 1fr 1fr;
     }
     .opening h1{
-        font-size: 65px;
+        font-size: 100px;
     }
 
 }
@@ -386,7 +387,7 @@ button {
         margin-left: 100px;
     }
     .opening h1{
-        font-size: 50px;
+        font-size: 100px;
     }
 }
 @media screen and (max-width: 768px){
@@ -397,7 +398,7 @@ button {
         
     }
     .opening h1{
-        font-size: 45px;
+        font-size: 100px;
         color: black
     }
     .nav{
@@ -413,7 +414,7 @@ button {
         
     }
     .opening h1{
-        font-size: 45px;
+        font-size: 60px;
         color: black
     }
     .nav{
@@ -429,6 +430,13 @@ button {
         grid-template-columns: 1fr;
         margin-left: 30px;
         
+    }
+    .game-links p{
+        font-size: 20px;
+    }
+    button{
+        width: 250px;
+        font-size: 20px;
     }
     .game-links img{
         height: 200px;
@@ -477,12 +485,18 @@ button {
     
 }
 
-@media screen and (max-width: 360px) {
+@media screen and (max-width: 375px) {
     .game-links{
         display: grid;
         grid-template-columns: 1fr;
         
         
+    }
+    .game-links p{
+        font-size: 20px;
+    }
+    button{
+        font-size: 25px;
     }
     
     .opening h1{
