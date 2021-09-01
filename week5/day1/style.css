@@ -311,6 +311,7 @@ img:hover{
     font-size: 60px;
     font-family: 'Itim', cursive;
     margin-bottom: 60px;
+    border-radius: 20px;
 }
 
 .leveled-books{
@@ -458,6 +459,7 @@ img:hover{
     justify-content: center;
     align-items: center;
     justify-content: space-evenly;
+    margin: 40px;
     
 }
 .movePage button{
@@ -469,6 +471,7 @@ img:hover{
     color:#f0f8ff;
     background-color: #FF66E9;
     font-family: 'Cabin Sketch', cursive;
+    
 }
 .background{
     background-color: #444444;
