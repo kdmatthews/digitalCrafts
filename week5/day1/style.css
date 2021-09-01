@@ -19,6 +19,7 @@ nav {
 .title{
     font-size: 100px;
     font-family: 'Architects Daughter', cursive;
+    
 }
 
 .main-container{
@@ -31,6 +32,7 @@ nav {
     
     
 }
+
 .main-container h2{
     margin-top: 25px;
     font-size: 50px;
@@ -114,6 +116,78 @@ nav {
 .sidebar p {
     font-size: 40px;
 }
+
+@media screen and (max-width: 1300px) {
+    .main-heading h1{
+        font-size: 80px;
+    }
+    
+}
+@media screen and (max-width: 1020px) {
+    .main-heading h1{
+        font-size: 60px;
+    }
+    
+}
+@media screen and (max-width: 800px) {
+    .main-heading h1{
+        text-align: center;
+    }
+    
+}
+@media  screen and (max-width: 430px) {
+    .main-heading h1{
+        text-align: center;
+        font-size: 50px;
+    }
+    .main-container h2 {
+        font-size: 30px;
+    }
+    .main-container p{
+        font-size: 20px;
+    }
+    .box1 {
+        height: 360px;
+    }
+    .box2 {
+        height: 360px;
+    }
+    .box3 {
+        height: 360px;
+    }
+    .nav{
+        font-size: 20px;
+    }
+    
+}
+@media  screen and (max-width: 325px) {
+    .main-heading h1{
+        text-align: center;
+        font-size: 40px;
+    }
+    .main-container h2 {
+        font-size: 20px;
+    }
+    .main-container p{
+        font-size: 15px;
+    }
+    .box1 {
+        height: 300px;
+    }
+    .box2 {
+        height: 300px;
+    }
+    .box3 {
+        height: 300px;
+    }
+    .main-container button {
+        height: 30px;
+        width: 100px;
+        font-size: 15px;
+    }
+    }
+    
+
 /* leveledreaders.html */
 
 
@@ -243,12 +317,6 @@ img:hover{
     color: #FF66E9;
     font-size: 60px;
     padding: 80px;
-    background-color: #252827;
-    border-radius: 60%; 
-    margin-top: 70px;
-    margin-bottom: 70px;
-    margin-right: 600px;
-    margin-left: 600px;
     font-family: 'Itim', cursive;
     /* display: inline-block; */
     
@@ -377,7 +445,7 @@ html{
         margin-left: 80px; 
     }
     .movePage button{
-        width: 200px;
+        width: 170px;
         font-size: 30px;
     }
 }
@@ -391,7 +459,7 @@ html{
         font-size: 25px;
     }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 420px){
     .movie{
         height: 200px;
         margin-left: 40px; 
@@ -402,7 +470,7 @@ html{
         font-size: 15px;
     }
     .nav {
-        font-size: 9px;
+        font-size: 17px;
     }
     .videos h1{
         font-size: 40px;
@@ -417,3 +485,16 @@ html{
         font-size: 50px;
     }
     }
+@media screen and (max-width: 360px) {
+    .nav {
+        font-size: 13px;
+    }
+    .movie {
+        margin-left: 30px;
+    }
+}
+@media screen and (max-width: 290px) {
+    .nav {
+        font-size: 9px;
+    }
+}
