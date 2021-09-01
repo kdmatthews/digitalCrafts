@@ -20,6 +20,7 @@ nav {
     font-size: 100px;
     font-family: 'Architects Daughter', cursive;
     
+    
 }
 
 .main-container{
@@ -195,7 +196,7 @@ nav {
     text-align: center;
    
     height: 300px;
-    border-radius: 100px;
+    
     font-family: 'Itim', cursive;
     
 }
@@ -203,20 +204,20 @@ nav {
 
 .book-searches h2{
     margin-top: 50px;
-    margin-bottom: 40px;
+    margin-bottom: 50px;
     font-size: 60px;
     padding-top: 50px;
-    color: #f0f8ff;
+    color: black;
     font-family: 'Itim', cursive;
 }
 
 
 .input{
     border: 3px solid #FF5412;
-    height: 40px;
+    height: 50px;
     width: 500px;
     border-radius: 50px;
-    padding: 0px 10px;
+    padding: 5px;
     font-family: 'Itim', cursive;
 
 }
@@ -235,6 +236,81 @@ nav {
     font-family: 'Itim', cursive;
 }
 
+
+
+
+
+.title-books{
+    text-align: center;
+    margin-bottom: 50px;
+    background-image: url("https://images.unsplash.com/photo-1596123068611-c89d922a0f0a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJvb2tzaGVsZnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 400px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.title-books h1{
+    font-size: 100px;
+    color: white;
+    font-family: 'Rampart One', cursive;
+   
+}
+.book-searches{
+    background-color: #FF66E9;
+    
+    font-family: 'Itim', cursive;
+}
+.search-button{
+    width: 100px;
+    border-radius: 7px;
+    background-color: #01DEE6;
+    color: grey;
+    font-size: 30px;
+    border: none;
+    font-family: 'Itim', cursive;
+}
+
+.leveled-books img{
+    width: 400px;
+    height: 450px;
+    margin: 9px;
+}
+img:hover{
+    width: 500px;
+    height: 550px;
+    transition: 0.3s ease;
+}
+
+.books{
+   text-align: center;
+   font-family: 'Itim', cursive;
+}
+.books h2{
+    color: black;
+    background-color: #01DEE6;
+    font-size: 40px;
+    padding: 60px;
+    font-family: 'Itim', cursive;
+    margin-top: 60px;
+    margin-bottom: 60px;
+    /* display: inline-block; */
+    
+    
+}
+.books h1{
+    background-color: #01DEE6;
+    padding: 40px;
+    font-size: 60px;
+    font-family: 'Itim', cursive;
+    margin-bottom: 60px;
+}
+
+.leveled-books{
+    margin-top: 60px;
+}
 @media screen and (max-width: 1300px) {
     .main{
     display: grid;
@@ -253,84 +329,68 @@ nav {
         grid-template-columns: 1fr;
         }
 }
-@media screen and (max-width: 400px){
+@media screen and (max-width: 415px){
     .main{
         display: grid;
         grid-template-columns: 1fr;
         }
+        .input{
+            width: 290px;
+        }
+        .search-button{
+            height: 35px;
+            font-size: 17px;
+            width: 60px;
+        }
+        .title-books h1{
+            font-size: 70px;
+        }
+        .leveled-books img{
+            height: 350px;
+            width: 300px;
+        }
+            
 }
 .main img{
     width: 300px;
     height: 400px;
 }
-
-
-
-.title-books{
-    text-align: center;
-    margin-bottom: 50px;
-    background-image: url("https://images.unsplash.com/photo-1596123068611-c89d922a0f0a?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTV8fGJvb2tzaGVsZnxlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60");
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 400px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-}
-.title-books h1{
-    font-size: 100px;
-    color: #f0f8ff;
-    font-family: 'Rampart One', cursive;
-   
-}
-.book-searches{
-    background-color: #252827;
-    margin-right: 200px;
-    margin-left: 200px;
-    font-family: 'Itim', cursive;
-}
-.search-button{
-    width: 100px;
-    border-radius: 5px;
-    background-color: #01DEE6;
-    color: grey;
-    font-size: 20px;
-    border-color: none;
-    font-family: 'Itim', cursive;
-}
-
-.leveled-books img{
-    width: 400px;
-    height: 450px;
-}
-img:hover{
-    width: 500px;
-    height: 550px;
-}
-
-.books{
-   text-align: center;
-   font-family: 'Itim', cursive;
-}
-.books h2{
-    color: #FF66E9;
-    font-size: 60px;
-    padding: 80px;
-    font-family: 'Itim', cursive;
-    /* display: inline-block; */
-    
-    
-}
-.books h1{
-    background-color: #FBF608;
-    padding: 40px;
-    font-size: 60px;
-    font-family: 'Itim', cursive;
-}
-
-.leveled-books{
-    margin-top: 60px;
+@media screen and (max-width: 380px){
+    .input{
+        width: 290px;
+    }
+    .search-button{
+        height: 35px;
+        font-size: 17px;
+        width: 60px;
+    }
+    .title-books h1{
+        font-size: 70px;
+    }
+    .leveled-books img{
+        height: 350px;
+        width: 300px;
+    }
+    .book-data img{
+        height: 350px;
+        width: 300px;
+    }
+    }
+@media screen and (max-width: 320px){
+    .input{
+        width: 250px;
+    }
+    .title-books h1{
+        font-size: 50px;
+    }
+    .leveled-books img{
+        height: 300px;
+        width: 250px;
+    }
+    .book-data img{
+        height: 300px;
+        width: 250px;
+    }
 }
 
 /* VIDEO */

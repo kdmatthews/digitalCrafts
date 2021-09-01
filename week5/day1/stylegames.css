@@ -24,13 +24,17 @@ nav {
     width:300px;
     height: 300px;
 }
+.game-links p{
+    font-size: 30px;
+}
 button {
     height: 50px;
-    width: 200px;
+    width: 220px;
     border-radius: 30px;
     margin: 20px;
     background-color: lightgreen;
     border: none;
+    font-size: 30px;
 }
 
 .opening {
