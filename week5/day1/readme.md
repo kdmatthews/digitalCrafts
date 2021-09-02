@@ -1,4 +1,4 @@
-## Kindergarten Resources Website
+# Kindergarten Resources Website
 
 # Desscription
 - This is a website designed to help parents and educators find resources for young learners.
@@ -9,11 +9,11 @@
     - App Resource Page
 
 # Screenshots
-![](Home.png)
-![](FindBooks.png)
-![](BooksLevel.png)
-![](Videos.png)
-![](Apps.png)
+![](Users/kaylamatthews/Desktop/digitalCrafts/week5/day1/images/Home.png)
+![](Users/kaylamatthews/Desktop/digitalCrafts/week5/day1/images/FindBooks.png)
+![](Users/kaylamatthews/Desktop/digitalCrafts/week5/day1/images/BooksLevel.png)
+![](Users/kaylamatthews/Desktop/digitalCrafts/week5/day1/images/Videos.png)
+![](Users/kaylamatthews/Desktop/digitalCrafts/week5/day1/images/Apps.png)
 
 # Key Features
 - Home Page: The home page explains what you can expect to find on each page of the website. It also includes a link to these pages.
@@ -26,7 +26,7 @@
 -HTML
 -CSS: Bootsrap, Flex, and Grid
 
-# What was learned
+# What Was Learned
 - How to call an API using async and await.
 - Using DOM manipulation to receive the needed information from the API.
 - Ways to incorporate CSS Bootstrap, Grid, and Flex into the same project.
