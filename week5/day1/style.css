@@ -122,7 +122,7 @@ nav {
 .sidebar p {
     font-size: 40px;
 }
-
+/* Media Queries for Home Page */
 @media screen and (max-width: 1300px) {
     .main-heading h1{
         font-size: 80px;
@@ -323,6 +323,7 @@ img:hover{
 .leveled-books{
     margin-top: 60px;
 }
+/* Media Queries for Book page */
 @media screen and (max-width: 1300px) {
     .main{
     display: grid;
@@ -510,6 +511,7 @@ img:hover{
 html{
     background-color: #444444;
 }
+/* Media Queries for Video Page  */
 
 @media screen and (max-width: 2000px){
     .movie{

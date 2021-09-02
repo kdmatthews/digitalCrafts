@@ -1,7 +1,10 @@
+
+// Inputting HTML 
 const searchContainer = document.querySelector(".main");
 const searchButton = document. querySelector(".search-button")
 const apikey = `AIzaSyB5C4BKB9gVxy93aRG6oJkqUw25PqZYA7Y`
 
+// Here I am creating an async/await function so I can fetch from the google books api
 async function searchBooks(){
     searchContainer.innerHTML = ""
     const searchInput = document.querySelector(".input").value;
@@ -9,7 +12,7 @@ async function searchBooks(){
     const bookData = await fetch (`https://www.googleapis.com/books/v1/volumes?q=kindergarten${searchInput}&key=AIzaSyB5C4BKB9gVxy93aRG6oJkqUw25PqZYA7Y`)
     const bookDataJson = await bookData.json();
     
-    
+// This for of loop will allow the users search to be added to the HTML.    
     for (const item of bookDataJson.items){
         const bookDataContainer = document.createElement('div')
         bookDataContainer.className = "book-data"
@@ -30,6 +33,8 @@ async function searchBooks(){
         buyLink.href = item.saleInfo.buyLink
         
         console.log(buyLink)
+//         When fetching from the API I am allowing the link to buy the books to appear. However, many of the books from Google Books API do not have a functional
+//         link. This if statement will make it so only the books with the ability to go to a link to purchase will add the buyLink HTML to the document.
         const window = "window.location.href"
         if (buyLink.href != `https://kdmatthews.github.io/KindergartenResources/undefined`){
             buyLink.innerHTML = "Buy Book Here"
@@ -39,11 +44,8 @@ async function searchBooks(){
         
     }
 }
+// This event listener is where the function is called.
        
 searchButton.addEventListener("click", () => searchBooks());
 
-// const getBooks = document.querySelector('.getBooks')
-// async function getSpecificBooks(){
-//     const book1 = await fetch (`https://www.googleapis.com/books/v1/volumes/zyTCAlFPjgYC?key=${apikey}`)
-// }
 
