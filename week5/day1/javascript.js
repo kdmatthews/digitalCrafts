@@ -31,7 +31,7 @@ async function searchBooks(){
         
         console.log(buyLink)
         const window = "window.location.href"
-        if (buyLink.href != `https://kdmatthews.github.io/KindergartenResources//undefined`){
+        if (buyLink.href != `https://kdmatthews.github.io/KindergartenResources/undefined`){
             buyLink.innerHTML = "Buy Book Here"
             bookDataContainer.append(buyLink)
         }
