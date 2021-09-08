@@ -22,7 +22,7 @@ app.get("/getNames", (req, res) => {
     console.log(req);
     res.send(`<h1>hello</h1>`);
 })
-console.log("hello")
+
 
 app.listen(PORT, console.log(`I'm on port ${PORT}`))
 
