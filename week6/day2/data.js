@@ -31,5 +31,5 @@ app.get('/', (req, res) => {
     }
     )
 })
-app.use(express.static('partials'));
+
 app.listen(PORT, console.log(`Listening at port ${PORT}`));
