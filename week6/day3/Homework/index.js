@@ -38,6 +38,8 @@ app.put('/updateStock/:stockId', async (req, res) => {
     res.send(data);
 })
 
+
+
 app.get('/readStock/:stockId', async (req, res) => {
     const id = req.params.stockId
     const { data, error } = await supabase
