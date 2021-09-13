@@ -1,5 +1,5 @@
 {
-  "name": "day1",
+  "name": "server",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
@@ -13,7 +13,6 @@
     "dotenv": "^10.0.0",
     "express": "^4.17.1",
     "pg": "^8.7.1",
-    "pg-pool": "^3.4.1",
-    "pg-promise": "^10.11.0"
+    "pg-pool": "^3.4.1"
   }
 }
