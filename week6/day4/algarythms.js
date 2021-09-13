@@ -45,7 +45,8 @@ function minMaxSum(arr){
 
 function anagrams(array){
     for (const word in array){
-        console.log(word)
+        const 
+        
     }
 }
 
