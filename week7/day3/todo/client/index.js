@@ -87,9 +87,13 @@ const updateData = async () => {
     const taskId = document.querySelector(".update-id").value;
     const url = `http://localhost:3007/updateItem/${taskId}`;
     const updatedTask = document.querySelector(".update-task").value;
+    console.log(taskId)
+    console.log(url)
+    console.log(updatedTask)
     const data = {
         todo_item: updatedTask
     }
+    console.log(data)
     const createTask = await fetch(url, {
         method: "POST",
         mode: "cors",
@@ -101,25 +105,6 @@ const updateData = async () => {
     })
 }
 const updateButton = document.querySelector(".update-button")
-deleteButton.addEventListener("click", () => {
+updateButton.addEventListener("click", () => {
     updateData()
 })
-// async function getItems() {
-//     const fetchItems = await fetch("http://localhost:3007/getItems", {
-//         method: 'POST',
-//         mode: 'no-cors',
-//         credentials: 'same-origin',
-//         headers: {
-//             'Content-Type': 'application/json',
-//         },
-//     }).then((response) => {
-//         return response.json();
-//     }).then((myJson) => {
-//         console.log(myJson);
-//     })
-//     };
-   
-    
-
-// const readButton = document.querySelector(".submit");
-// readButton.addEventListener("click", () => getItems());
