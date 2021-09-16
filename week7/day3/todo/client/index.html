@@ -8,12 +8,12 @@
 </head>
 <body>
     <div class="main-container">
-        <h1>Get User</h1>
+        <h1>Shit That Needs Doing</h1>
         <input class="input-user" type="text" placeholder="to do task to add">
         <button class="submit">Submit</button>
-       <div class="read">
+       <!-- <div class="read">
         <button class="read">Read List</button>
-        </div>
+        </div> -->
     </div>
     <div class="delete">
         <input type="text"class="delete-id" placeholder="number to delete">
@@ -24,6 +24,13 @@
         <input type="text" class="update-task" placeholder="task to update">
         <button class="update-button">Update</button>
     </div>
+
+    <div>
+        ${items.map(item => `
+        <p>${item.todo_item}</p>
+        `).join('')}
+        
+    </div>
 </body>
-<script src="index.js"></script>
+<script src="todo.js"></script>
 </html>

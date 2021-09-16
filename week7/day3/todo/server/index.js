@@ -8,9 +8,9 @@ const PORT = 3007;
 app.use(express.json());
 app.use(cors());
 
-const es6Renderer = require('express-es6-template-engine');
+const es6Renderer = require('express-es6-template-engine')
 app.engine('html', es6Renderer);
-app.set('views', 'client');
+app.set('views', '../client');
 app.set('view engine', 'html')
 
 
@@ -24,11 +24,13 @@ app.post("/createItem", async(req, res) => {
 });
 
 
-app.post("/getItems", async(req, res) => {
-
+app.get("/", async(req, res) => {
+    const todo_item = req.body.todo_item;
     const items = await ToDo_List.findAll();
-    res.send(items)
+    res.render('index', {locals: {items}});
+   
 });
+
 
 app.post("/updateItem/:id", async(req,res) => {
     const item = await ToDo_List.update(req.body, {
