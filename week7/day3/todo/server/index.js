@@ -25,7 +25,7 @@ app.post("/createItem", async(req, res) => {
 
 
 app.post("/getItems", async(req, res) => {
-    // res.setButton("Access-Control-Allow_Origin", "http://127.0.0.1:5500/client/index.html")
+
     const items = await ToDo_List.findAll();
     res.send(items)
 });

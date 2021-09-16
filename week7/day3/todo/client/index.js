@@ -63,7 +63,47 @@ submitButton.addEventListener("click", () => {
     createItem();
 })
 
+const deleteData = async () => {
+    const taskId = document.querySelector(".delete-id").value;
+    const url = `http://localhost:3007/deleteItem/${taskId}`;
+    const data ={
+        taskId,
+    }
+    const deleteToDo = await fetch(url, {
+        method: "POST",
+        mode: "cors",
+        headers: {
+            'Content-Type': 'application/json',
+         },
+         body: JSON.stringify(data),
+    })
+}
+const deleteButton = document.querySelector(".delete-button")
+deleteButton.addEventListener("click", () => {
+    deleteData()
+})
 
+const updateData = async () => {
+    const taskId = document.querySelector(".update-id").value;
+    const url = `http://localhost:3007/updateItem/${taskId}`;
+    const updatedTask = document.querySelector(".update-task").value;
+    const data = {
+        todo_item: updatedTask
+    }
+    const createTask = await fetch(url, {
+        method: "POST",
+        mode: "cors",
+        headers: {
+            'Content-Type': 'application/json',
+         },
+         body: JSON.stringify(data),
+
+    })
+}
+const updateButton = document.querySelector(".update-button")
+deleteButton.addEventListener("click", () => {
+    updateData()
+})
 // async function getItems() {
 //     const fetchItems = await fetch("http://localhost:3007/getItems", {
 //         method: 'POST',
