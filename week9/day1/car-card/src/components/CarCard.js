@@ -1,5 +1,9 @@
 import React, { Component } from 'react'
 
+function newPrice(number) {
+    return parseFloat(number).toLocaleString('us-US', { style: 'currency', currency: 'USD' });
+}
+
 export default class CarCard extends Component {
    
     state = {
@@ -32,22 +36,23 @@ export default class CarCard extends Component {
             changeName: !this.state.changeName
         })
     }
-
+    
     render() {
         return (
             <div className="cars">
                 <img src={this.state.carImage} width="400" height="300"></img>
                <h1>{this.state.bugatti.make}</h1>
                <h2>{this.state.bugatti.model}</h2>
-               <h3>Price: {this.state.bugatti.price}</h3>
+               <h3>{newPrice(this.state.bugatti.price)}</h3>
                <p>Engine: {this.state.bugatti.engine}</p>
                <p>Horsepower: {this.state.bugatti.horsepower}</p>
                <p>Transmission: {this.state.bugatti.transmission}</p>
                <p>Top Speed: 
                    US{this.state.bugatti.topSpeed[0].US}   Metric{this.state.bugatti.topSpeed[0].Metric}</p>
-               <button onClick={this.changeImage}>Change Picture</button>
+                <button onClick={this.changeImage}>Change Picture</button>
+              
             </div>
-
+             
 
            
         
