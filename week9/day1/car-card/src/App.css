@@ -1,0 +1,15 @@
+.cars{
+  background-color: white;
+  height: 100vh;
+  border: black 1px solid;
+  border-radius: 4px;
+  padding: 1rem;
+  width: 400px;
+}
+
+img{
+  border-radius: 20px;
+}
+h1{
+  text-align: center;
+}

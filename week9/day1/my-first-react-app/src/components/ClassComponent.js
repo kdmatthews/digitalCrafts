@@ -4,6 +4,7 @@ export default class ClassComponent extends Component {
     state = {
         counter: 0,
         studentName: "Jordan",
+        changeName: true;
     };
 
 
@@ -14,11 +15,14 @@ export default class ClassComponent extends Component {
         this.setState({ counter : this.state.counter - 1 });
      }
      ChangeStudent=()=>{
-         let name = "Dustin"
-         this.setState({ studentName : name})
+         let name = this.state.changeName ? "Jordan" : "Matt"
+         this.setState({ studentName : name, changeName: !this.state.changeName})
+      
      }
 
     render() {
+
+        const studentName = this.state.studentName ? "Jordan" : "Matt"
         return (
             <div>
                 <p>Class Counter</p>
