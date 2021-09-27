@@ -1,16 +1,4 @@
 body {
-  
-  height: 100vh;
-  margin: 0;
-}
-.App{
-  display: grid;
-  grid-template-columns: 1fr 1fr 1fr;
-  gap: .5rem;
-}
-
-.cars{
-  
   background-image: linear-gradient(
     to right bottom,
     #b91eda,
@@ -18,21 +6,35 @@ body {
     #8234e5,
     #5d3be8,
     #1241eb
+    
   );
-  height: 600px;
-  width: 410px;
-  border: black 4px solid;
+  background-repeat: no-repeat;
+  height: 100%;
+  margin: 0;
+}
+.App{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  
+
+  
+}
+
+.cars{
+  
+  background-color: white;
+  border: black 3px solid;
   border-radius: 10px;
-  padding: 1rem;
   margin: 1rem;
+  
 
 
 }
 
 img{
-  border-radius: 20px;
-  border: black 4px solid;
-  margin-top: 0px;
+  margin:0;
+  width: 100%;
+  
 }
 button{
   border-radius: 4px;
@@ -40,7 +42,7 @@ button{
   font-size: 1.3rem;
   margin-top: 1rem;
   background-color: lightblue;
-  
+  margin-bottom: 1rem;
 
 }
 
