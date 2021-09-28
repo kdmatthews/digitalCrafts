@@ -11,6 +11,8 @@ export default class Card extends Component {
            
         })
     }
+
+    
     render() {
         const { flipped } = this.state;
         const { id, name, hp, sprites, changeImage } = this.props.data;
@@ -21,14 +23,16 @@ export default class Card extends Component {
         return (
             <div className="Card">
             
-           <p>{name}</p>
+           <h2>{name}</h2>
            <img src={flipped ? sprites.back : sprites.front} alt=""/>
-           <p>hp: {hp}</p>
+           <h5>hp: {hp}</h5>
         {/* {data[0].pokemon.map((mon, index) => (<h2>{mon.name}</h2>))}
         {data[0].pokemon.map((mon, index) => (<h3>{mon.hp}</h3>))}
         {data[0].pokemon.map((mon, index) => (<img src={mon.sprites.front}></img>))} */}
             <button onClick={this.flipFunction}>Flip</button>
+            <button>Delete</button>
             </div>
+            
         )
     }
 }
