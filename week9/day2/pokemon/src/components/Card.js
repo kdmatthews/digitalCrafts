@@ -23,7 +23,7 @@ export default class Card extends Component {
             
            <p>{name}</p>
            <img src={flipped ? sprites.back : sprites.front} alt=""/>
-           <p>{hp}</p>
+           <p>hp: {hp}</p>
         {/* {data[0].pokemon.map((mon, index) => (<h2>{mon.name}</h2>))}
         {data[0].pokemon.map((mon, index) => (<h3>{mon.hp}</h3>))}
         {data[0].pokemon.map((mon, index) => (<img src={mon.sprites.front}></img>))} */}

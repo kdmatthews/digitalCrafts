@@ -1,0 +1,16 @@
+.Container{
+    display: flex;
+    justify-content: center;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+
+.Card{
+    background-color: lavender;
+    text-align: center;
+    gap: 1rem;
+    border: 1px solid black;
+    margin: 1rem;
+    padding: .5rem;
+}
+

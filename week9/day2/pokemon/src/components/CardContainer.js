@@ -1,8 +1,10 @@
 import React, { Component } from 'react'
 import Card from "./Card";
+import "./card.css"
 
 export default class CardContainer extends Component {
     state = {
+        
         data: [
           {
             pokemon: [
@@ -209,20 +211,10 @@ export default class CardContainer extends Component {
             ],
           },
         ],
-        cardImage: "",
-        changePicture: true,
+        
       }
 
-    changeImage = () => {
-        let picture = this.state.changePicture
-        ? this.state.data[0].pokemon[0].sprites.front
-        : this.state.data[0].pokemon[0].sprites.back
-
-        this.setState({
-            cardImage: picture,
-            changePicture: !this.state.changePicture
-        })
-    }
+   
 //     pokemon = () => {     
 //     const data = this.state.data
 //     for (single of data){
@@ -242,7 +234,7 @@ export default class CardContainer extends Component {
     // const back = this.state.data[0].pokemon[0].sprites.back;
       
         return (
-            <div>
+            <div className="Container">
                 {data.map((pokemon) => (
                     <Card data={pokemon} />
                 ))}
