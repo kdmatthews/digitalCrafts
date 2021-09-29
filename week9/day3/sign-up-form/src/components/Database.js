@@ -1,21 +1,8 @@
 import React from "react";
 
 export default function Database(props) {
-    const { data } = props;
-    console.log(data)
-    const address = data.address
-    const firstname = data.firstName
-    const lastname = data.lastName
-    const city = data.city
-    const state = data.state
-    const zipcode = data.zipcode
-    const username = data.username
-    const email = data.email
-
+    const { address, firstName, lastName, city, state, zipcode, username, email } = props.data;
    
-    // const address = signUpList[0].address
-    // const firstName = signUpList[0].firstName
-    // const lastName = signUpList[0].lastName
     return (
         
         <div>
@@ -23,7 +10,7 @@ export default function Database(props) {
          
         <div className="DB">
            
-            <p>{firstname}  {lastname}</p>
+            <p>{firstName}  {lastName}</p>
             <p>{address}</p>
             <p>{city}, {state}, {zipcode}</p>
             <p>{username}</p>
