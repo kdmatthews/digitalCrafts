@@ -1,0 +1,11 @@
+body{
+    background-color: cadetblue;
+}
+
+.DB{
+    display: flex;
+    flex-direction: row;
+    margin: 1rem;
+    padding: 1rem;
+    justify-content: space-evenly;
+}

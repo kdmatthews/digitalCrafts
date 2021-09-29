@@ -1,17 +1,23 @@
 import { useState } from "react";
 import Signup from "./components/Signup";
-import Datbase from "./components/Database";
+import Database from "./components/Database";
+import "./components/style.css"
 
 
 function App() {
   const [signUpItem, setSignUpItem] = useState({});
-  const [signUpList, setSignUpList] = useState(['kayla', 'matthews']);
-  // const [userInfo, setUserInfo] = useState({})
+  const [signUpList, setSignUpList] = useState([]);
+  const data = signUpList
+  console.log(data)
+
   return (
     <div className="App">
       <h1>Hello</h1>
       <Signup signUpItem={signUpItem} setSignUpItem={setSignUpItem} signUpList={signUpList} setSignUpList={setSignUpList}/>
-      <Datbase signUpList={signUpList}/>
+      {data.map((user) => (
+        <Database data={user}/>
+      ))}
+           
     </div>
   );
 }
