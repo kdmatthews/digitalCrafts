@@ -224,7 +224,9 @@ export default class CardContainer extends Component {
 // }
 
    
-   
+deleteFunction = () => {
+            
+}
     
     render() {
     const data = this.state.data[0].pokemon;
