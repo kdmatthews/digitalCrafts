@@ -6,7 +6,7 @@ export default function Signup(props) {
     
 
     return (
-        <div>
+        <div className="signUpSheet">
             <h1>SignUp</h1>
             {/* <form action=""> */}
 

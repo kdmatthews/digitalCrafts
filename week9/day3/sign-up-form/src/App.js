@@ -12,8 +12,9 @@ function App() {
 
   return (
     <div className="App">
-      <h1>Hello</h1>
+     
       <Signup signUpItem={signUpItem} setSignUpItem={setSignUpItem} signUpList={signUpList} setSignUpList={setSignUpList}/>
+      
       {data.map((user) => (
         <Database data={user}/>
       ))}

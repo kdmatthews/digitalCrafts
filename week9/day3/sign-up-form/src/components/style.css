@@ -1,11 +1,36 @@
 body{
     background-color: cadetblue;
+    
+}
+.App{
+    display: flex;
+    flex-direction: row;
 }
 
 .DB{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     margin: 1rem;
     padding: 1rem;
     justify-content: space-evenly;
+    border: 3px black solid;
+}
+
+.signUpSheet{
+    display: flex;
+    flex-direction: column;
+    border: 3px black solid;
+    padding: 3rem;
+}
+input{
+    padding: 1rem;
+    width: 25rem;
+    margin: .5rem;
+}
+button{
+    height: 3rem;
+}
+
+.outerDiv{
+    border: 3px black solid;
 }

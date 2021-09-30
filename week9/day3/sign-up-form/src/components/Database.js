@@ -4,9 +4,9 @@ export default function Database(props) {
     const { address, firstName, lastName, city, state, zipcode, username, email } = props.data;
    
     return (
-        
-        <div>
-            <h3>User Info</h3>
+       
+        <div className="outerDiv">
+           <h1>User Info</h1>
          
         <div className="DB">
            
