@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from 'react';
 import { UserButton, HeaderHeader } from "../styled-components/HeaderStyle";
 import { SideBarDiv } from '../styled-components/SiderbarStyle';
+import { MainDiv } from '../styled-components/FormStyle';
 
 
 const URL = "https://randomuser.me/api/";
@@ -37,12 +38,20 @@ export default function Sidebar() {
 
  
     return (
+       
         <SideBarDiv>
-            <HeaderHeader>Sidebar</HeaderHeader>
+            <h3>Welcome</h3>
+            <p> {user?.name?.first} {""} {user?.name?.last}</p>
             <img src={user?.picture?.large} alt=""/>
-            <p>Welcome {user?.name?.first} {""} {user?.name?.last}</p>
-            <p>{user?.location?.city}</p>
-            <UserButton onClick={() => setCounter(counter + 1)}>Get New User</UserButton>
+            
+            <h2>Dashboard</h2>
+            <h2>Forms</h2>
+            <h2>UI Elements</h2>
+            <h2>Charts</h2>
+            <h2>Tables</h2>
+            {/* <p>{user?.location?.city}</p> */}
+            {/* <UserButton onClick={() => setCounter(counter + 1)}>Get New User</UserButton> */}
         </SideBarDiv>
+       
     )
 }

@@ -1,8 +1,8 @@
 import styled from 'styled-components';
 
 export const UserButton = styled.button`
-    height: 40px;
-    width: 90px;
+    height: 20%;
+    width: 80%;
     border: none;
     background-color: #5885af;
     color: #efebe0;
@@ -10,13 +10,15 @@ export const UserButton = styled.button`
 `;
 
 export const HeaderHeader = styled.h1`
-    color: #fb6b90;
+    color: #313E61;
     font-family: "Roboto", sans-serif;
+    font-size: 3rem;
+    padding: 1rem;
 `
 export const HeaderContainer = styled.div `
     display:flex;
     align-items:center;
     height: 80px;
     width: 100vw;
-    background-color: greenyellow;
+    background-color: #FBD2C9;
 `

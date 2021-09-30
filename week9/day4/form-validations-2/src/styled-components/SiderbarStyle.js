@@ -1,12 +1,13 @@
 import styled from 'styled-components';
 
 export const SideBarDiv = styled.div`
-    background-color: green;
-    height: 80%;
-    width: 45%;
+    background-color: #774A62;
+    height: 100vh;
+    width: 25vw;
     display: flex;
     flex-direction: column;
-    align-items: center;
+    align-items:center;
+    
     
 
 
