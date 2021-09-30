@@ -1,6 +1,6 @@
 import React, { useEffect, useState } from 'react';
 import { UserButton, HeaderHeader } from "../styled-components/HeaderStyle";
-import { SideBarDiv } from '../styled-components/SiderbarStyle';
+import { SideBarDiv, Img, WelcomeDiv, WelcomeTitle, WelcomeName } from '../styled-components/SiderbarStyle';
 import { MainDiv } from '../styled-components/FormStyle';
 
 
@@ -40,10 +40,12 @@ export default function Sidebar() {
     return (
        
         <SideBarDiv>
-            <h3>Welcome</h3>
-            <p> {user?.name?.first} {""} {user?.name?.last}</p>
-            <img src={user?.picture?.large} alt=""/>
+            <WelcomeDiv>
+            <Img src={user?.picture?.large} alt=""/>
+            <WelcomeTitle>Welcome</WelcomeTitle>
+            <WelcomeName> {user?.name?.first} {""} {user?.name?.last}</WelcomeName>
             
+            </WelcomeDiv>
             <h2>Dashboard</h2>
             <h2>Forms</h2>
             <h2>UI Elements</h2>
