@@ -1,9 +1,9 @@
 import React, { useState } from 'react'
-
+import { FooterDiv  } from '../styled-components/FormStyle';
 export default function Form() {
     const [formData, setFormData] = useState({});
     return (
-        <div>
+        <FooterDiv>
             <h1>Form</h1>
             <form>
                 <input onChange={(e)=>setFormData({...formData,[e.target.name]:e.target.value})} type="text" placeholder="username" name="username" value={formData?.username}/>
@@ -13,6 +13,6 @@ export default function Form() {
                 <input type="submit"/>
                 </div>
             </form>
-        </div>
+        </FooterDiv>
     )
 }
