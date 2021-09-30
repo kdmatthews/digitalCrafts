@@ -1,28 +1,29 @@
 import React from "react";
+import { DatabaseDiv, Header2, Name, UserInfo, InfoDiv } from "../styled-components/DatabaseStyle";
 
 export default function Database(props) {
     const { address, firstName, lastName, city, state, zipcode, username, email } = props.data;
    
     return (
        
-        <div className="outerDiv">
-           <h1>User Info</h1>
+        <DatabaseDiv>
+           <Header2>{firstName}'s Info</Header2>
          
-        <div className="DB">
-           
-            <p>{firstName}  {lastName}</p>
-            <p>{address}</p>
-            <p>{city}, {state}, {zipcode}</p>
-            <p>{username}</p>
-            <p>{email}</p>
+     
+        <InfoDiv>           
+            <Name>{firstName} {""} {lastName}</Name>
+            <UserInfo>{address}</UserInfo>
+            <UserInfo>{city}, {state}, {zipcode}</UserInfo>
+            <UserInfo>{username}</UserInfo>
+            <UserInfo>{email}</UserInfo>
+        </InfoDiv>
          
           
 
 
             
             
-           
-        </div>
-        </div>
+       
+        </DatabaseDiv>
     )
 }

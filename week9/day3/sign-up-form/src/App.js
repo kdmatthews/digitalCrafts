@@ -1,7 +1,8 @@
 import { useState } from "react";
 import Signup from "./components/Signup";
 import Database from "./components/Database";
-import "./components/style.css"
+import { MainDiv } from "./styled-components/SignUpStyle"
+// import "./components/style.css"
 
 
 function App() {
@@ -11,15 +12,19 @@ function App() {
   console.log(data)
 
   return (
-    <div className="App">
-     
+    <MainDiv>
+      {/* <div>
+        <h1>Sign Up </h1> */}
       <Signup signUpItem={signUpItem} setSignUpItem={setSignUpItem} signUpList={signUpList} setSignUpList={setSignUpList}/>
-      
+      {/* </div>
+      <div> */}
+        {/* <h1>Database</h1> */}
       {data.map((user) => (
         <Database data={user}/>
       ))}
            
-    </div>
+      {/* </div> */}
+    </MainDiv>
   );
 }
 
