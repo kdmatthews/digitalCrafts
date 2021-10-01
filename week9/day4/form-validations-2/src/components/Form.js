@@ -17,6 +17,7 @@ export default function Form() {
                 <div>
                 <RegisterButton>Register</RegisterButton>
                 <SignInButton>Sign In</SignInButton>
+               
                 </div>
             </form>
         </FooterDiv>
