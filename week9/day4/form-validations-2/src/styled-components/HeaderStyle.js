@@ -4,7 +4,7 @@ import styled from 'styled-components';
 
 export const HeaderHeader = styled.h1`
     color: #313E61;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Itim', cursive;
     font-size: 2rem;
     padding: 1rem;
 `
@@ -35,13 +35,14 @@ export const WelcomeDiv = styled.div`
 export const WelcomeTitle = styled.h2`
    
     font-size: 1.5rem;
+    font-family: 'Itim', cursive;
   
 `
 export const WelcomeName = styled.h3`
   
     font-size: 1.5rem;
     color: #313E61;
-    font-family: "Roboto", sans-serif;
+    font-family: 'Itim', cursive;
     padding: 1rem;
     
     
@@ -51,4 +52,5 @@ background-color: #774A62;
 border: none;
 width: 5rem;
 color: white;
+font-family: 'Itim', cursive;
 `

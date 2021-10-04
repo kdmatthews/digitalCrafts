@@ -38,7 +38,7 @@ export const StyledLinks = styled(Link)`
   font-size: 1.2rem;
   padding-top: 1.3rem;
   padding-bottom: 1.3rem;
-  
+  font-family: 'Itim', cursive;
   
   text-decoration: none;
   &:hover {

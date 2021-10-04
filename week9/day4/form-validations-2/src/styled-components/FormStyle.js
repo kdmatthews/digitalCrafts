@@ -41,6 +41,7 @@ export const Input = styled.input`
     width: 14rem;
     margin-top: 1rem;
     padding-left: 1rem;
+    font-family: 'Itim', cursive;
     
    
 
@@ -54,12 +55,14 @@ export const Forgotpassword = styled.p`
     margin-left: 3.8rem;
     font-size: .6rem;
     color: grey;
+    font-family: 'Itim', cursive;
 `
 export const LoginHeader = styled.h1`
     color: white;
     font-size: 1.3rem;
     margin-bottom: 0;
     margin-left: 18%;
+    font-family: 'Itim', cursive;
 
 `
  
@@ -72,15 +75,18 @@ export const SignInButton = styled.button`
     color: white;
     margin-top: 1.5rem;
     font-size: 1.5rem;
+    
 `
 export const SignUp = styled.p`
     color: white;
-    font-size: .6rem;
+    font-size: .8rem;
     margin-top: 6rem;
     margin-bottom: 0;
-    margin-left: 35%;
+    margin-left: 30%;
+    font-family: 'Itim', cursive;
 `
 export const RememberMe = styled.label`
     color: grey;
     margin-top: 1rem;
+    font-family: 'Itim', cursive;
 `
