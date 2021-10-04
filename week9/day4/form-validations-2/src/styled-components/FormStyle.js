@@ -2,10 +2,11 @@ import styled from 'styled-components';
 
 export const FooterDiv = styled.div`
     background-color: white;
-    height: 100vh;
+    grid-area: formcontainer;
+    /* height: 100vh;
     width: 75vw;
     display: flex;
-    flex-direction: column;
+    flex-direction: column; */
     padding: 2rem;
     
     
@@ -13,10 +14,14 @@ export const FooterDiv = styled.div`
 
 `
 export const MainDiv = styled.div`
-    display: flex;
-    flex-direction: row;
-    height: 100vh;
-    width: 100vw;
+     height: 100vh;
+  display: grid;
+  grid-template-areas:
+    "header header header header"
+    "sidebar formcontainer formcontainer formcontainer"
+    "sidebar formcontainer formcontainer formcontainer"
+    "sidebar footer footer footer";
+  grid-template-rows: auto;
  
 
 `

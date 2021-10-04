@@ -9,19 +9,22 @@ import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
 function App() {
   return (
   <Router>
-      <Header />
+    <Switch>
+   
       <MainDiv>
+      <Header />
       <Sidebar />
       <Route path="/form">
         <Form />
       </Route>
-      <Route path="/">
+      <Route exact path="/">
         <Home />
       </Route>
       <Route path="/dashboard">
         <Dashboard />
       </Route>
       </MainDiv>
+  </Switch>
     </Router>
   );
 }

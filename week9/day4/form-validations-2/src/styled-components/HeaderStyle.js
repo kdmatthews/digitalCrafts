@@ -16,9 +16,12 @@ export const HeaderHeader = styled.h1`
     padding: 1rem;
 `
 export const HeaderContainer = styled.div `
-    display:flex;
+    /* display:flex;
     align-items:center;
     height: 80px;
-    width: 100vw;
+    width: 100vw; */
+    grid-area: header;
+  display: flex;
+  flex-direction: row;
     background-color: #FBD2C9;
 `

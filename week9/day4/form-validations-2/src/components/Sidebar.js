@@ -2,6 +2,7 @@ import React, { useEffect, useState } from 'react';
 import { UserButton, HeaderHeader } from "../styled-components/HeaderStyle";
 import { SideBarDiv, Img, WelcomeDiv, WelcomeTitle, WelcomeName } from '../styled-components/SiderbarStyle';
 import { MainDiv } from '../styled-components/FormStyle';
+import {Link} from "react-router-dom";
 
 
 const URL = "https://randomuser.me/api/";
@@ -46,13 +47,10 @@ export default function Sidebar() {
             <WelcomeName> {user?.name?.first} {""} {user?.name?.last}</WelcomeName>
             
             </WelcomeDiv>
-            <h2>Dashboard</h2>
-            <h2>Forms</h2>
-            <h2>UI Elements</h2>
-            <h2>Charts</h2>
-            <h2>Tables</h2>
-            {/* <p>{user?.location?.city}</p> */}
-            {/* <UserButton onClick={() => setCounter(counter + 1)}>Get New User</UserButton> */}
+            <Link to="/">Home</Link>
+            <Link to="/dashboard">Dashboard</Link>
+            <Link to="/form">Form</Link>
+          
         </SideBarDiv>
        
     )
