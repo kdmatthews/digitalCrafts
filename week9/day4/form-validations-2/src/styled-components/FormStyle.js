@@ -22,6 +22,7 @@ export const MainDiv = styled.div`
     "sidebar formcontainer formcontainer formcontainer"
     "sidebar footer footer footer";
   grid-template-rows: auto;
+  
  
 
 `

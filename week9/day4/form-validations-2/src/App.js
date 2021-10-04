@@ -4,7 +4,8 @@ import Header from "./components/Header";
 import { MainDiv } from "./styled-components/FormStyle";
 import Home from "./components/Home";
 import Dashboard from "./components/Dashboard";
-import {BrowserRouter as Router, Switch, Route} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
+import ErrorPage from "./components/ErrorPage";
 
 function App() {
   return (
@@ -22,6 +23,13 @@ function App() {
       </Route>
       <Route path="/dashboard">
         <Dashboard />
+      </Route>
+      <Route path="*">
+        <Redirect to="/errorpage" />
+
+      </Route>
+      <Route path="/errorpage">
+        <ErrorPage />
       </Route>
       </MainDiv>
   </Switch>
