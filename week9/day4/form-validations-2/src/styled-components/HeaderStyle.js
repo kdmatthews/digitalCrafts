@@ -1,13 +1,6 @@
 import styled from 'styled-components';
 
-export const UserButton = styled.button`
-    height: 20%;
-    width: 80%;
-    border: none;
-    background-color: #5885af;
-    color: #efebe0;
 
-`;
 
 export const HeaderHeader = styled.h1`
     color: #313E61;
@@ -24,4 +17,38 @@ export const HeaderContainer = styled.div `
   flex-direction: row;
     background-color: #FBD2C9;
 
+`
+export const Img = styled.img`
+    border-radius: 70px;
+    padding: .5rem;
+  
+` 
+
+export const WelcomeDiv = styled.div`
+    /* display: grid;
+    grid-template-columns: 1fr 1fr; */
+    display: flex;
+    padding-left: 50%;
+  
+    
+`
+export const WelcomeTitle = styled.h2`
+   
+    font-size: 1.5rem;
+  
+`
+export const WelcomeName = styled.h3`
+  
+    font-size: 1.5rem;
+    color: #313E61;
+    font-family: "Roboto", sans-serif;
+    padding: 1rem;
+    
+    
+`
+export const SideBarButton = styled.button`
+background-color: #774A62;
+border: none;
+width: 5rem;
+color: white;
 `
