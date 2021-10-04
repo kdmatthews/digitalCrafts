@@ -12,16 +12,16 @@ export const UserButton = styled.button`
 export const HeaderHeader = styled.h1`
     color: #313E61;
     font-family: "Roboto", sans-serif;
-    font-size: 3rem;
+    font-size: 2rem;
     padding: 1rem;
 `
 export const HeaderContainer = styled.div `
-    /* display:flex;
-    align-items:center;
-    height: 80px;
-    width: 100vw; */
+   
+    height: 7rem;
+    width: 100vw;
     grid-area: header;
   display: flex;
   flex-direction: row;
     background-color: #FBD2C9;
+
 `

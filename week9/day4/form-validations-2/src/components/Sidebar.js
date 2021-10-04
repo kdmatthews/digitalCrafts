@@ -1,14 +1,19 @@
 import React, { useEffect, useState } from 'react';
 import { UserButton, HeaderHeader } from "../styled-components/HeaderStyle";
-import { SideBarDiv, Img, WelcomeDiv, WelcomeTitle, WelcomeName } from '../styled-components/SiderbarStyle';
+import { SideBarDiv, Img, WelcomeDiv, WelcomeTitle, WelcomeName, LinkDiv } from '../styled-components/SiderbarStyle';
 import { MainDiv } from '../styled-components/FormStyle';
 import {Link} from "react-router-dom";
+import { sidebarData } from './SideBarData';
+import SideBarLinks from './SideBarLinks';
 
 
 const URL = "https://randomuser.me/api/";
-export default function Sidebar() {
+export default function Sidebar(props) {
+    const viewSidebar = props.viewSidebar;
+    
     const [user, setUser] = useState({})
-    const [counter, setCounter] = useState(0)
+    const [counter, setCounter] = useState(0);
+    
     // useEffect
     // hook that fires when the component is mounted
     useEffect(() => {
@@ -39,19 +44,28 @@ export default function Sidebar() {
 
  
     return (
-       
+        <>
+        {viewSidebar ?  
         <SideBarDiv>
             <WelcomeDiv>
             <Img src={user?.picture?.large} alt=""/>
             <WelcomeTitle>Welcome</WelcomeTitle>
             <WelcomeName> {user?.name?.first} {""} {user?.name?.last}</WelcomeName>
+            </WelcomeDiv>  
+            <LinkDiv>
+            {sidebarData?.map((linkData)=>(
+                <SideBarLinks linkData={linkData} />
+            ))}
+            </LinkDiv>
             
-            </WelcomeDiv>
-            <Link to="/">Home</Link>
-            <Link to="/dashboard">Dashboard</Link>
-            <Link to="/form">Form</Link>
           
-        </SideBarDiv>
-       
+        
+        </SideBarDiv> 
+         :  <></>}
+
+        
+        
+       </>
     )
-}
+    
+         }
