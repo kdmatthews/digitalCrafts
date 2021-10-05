@@ -37,8 +37,6 @@ theOtherHeroes.map((hero) => {
 const allHeroes = justiceLeague.concat(theOtherHeroes)
 // console.log(allHeroes)
 
-// 6
-const result = justiceLeague.filter(mem => !mem.included("man"))
-console.log(result)
+
 
 
