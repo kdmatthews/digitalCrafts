@@ -16,8 +16,7 @@ export const FormDiv = styled.div`
 
 `
 export const MainDiv = styled.div`
-     /* height: 100vh; */
-  display: grid;
+ display: grid;
   grid-template-areas:
     "header header header header"
     "sidebar formcontainer formcontainer formcontainer"
@@ -27,8 +26,6 @@ export const MainDiv = styled.div`
   height: 100vh;
   width: 100vw;
   
- 
-
 `
 
 export const Input = styled.input`

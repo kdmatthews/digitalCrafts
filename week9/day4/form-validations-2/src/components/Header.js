@@ -13,10 +13,10 @@ export default function Header(props) {
     const [user, setUser] = useState({})
     const [counter, setCounter] = useState(0);
     const dispatch = useDispatch()
-    const userdata = useSelector(state=>state.userData.name.first)
-    const userLastName = useSelector(state=>state.userData.name.last)
-    const userImage = useSelector(state=>state.userData.picture.large)
-    console.log(userdata)
+    const userdata = useSelector(state=>state.userData.name?.first)
+    const userLastName = useSelector(state=>state.userData.name?.last)
+    const userImage = useSelector(state=>state.userData.picture?.large)
+   
     
     // useEffect
     // hook that fires when the component is mounted
@@ -64,12 +64,7 @@ export default function Header(props) {
            
                 <Img src={[userImage]} alt="" />
                 </WelcomeDiv>
-            {/* <HeaderHeader>Coding Market</HeaderHeader> */}
-            {/* <WelcomeDiv>
-            <Img src={user?.picture?.large} alt=""/>
-            {/* <WelcomeTitle>Welcome</WelcomeTitle> */}
-            {/* <WelcomeName> Welcome {user?.name?.first} {""} {user?.name?.last}!</WelcomeName>
-            </WelcomeDiv>  */}
+         
             <button onClick={()=> dispatch({type: 'SET_USERNAME', payload: "poop"})}>Dispatch Action</button>
             <button onClick={()=> dispatch({type: 'SET_RESTAURANTS', payload: ["Chilis", "Kelp", "Trattorias", "813Pho", "Wine Exchange"]})}>restaurants</button>
            

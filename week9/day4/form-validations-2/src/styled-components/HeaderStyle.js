@@ -2,12 +2,7 @@ import styled from 'styled-components';
 
 
 
-export const HeaderHeader = styled.h1`
-    color: #313E61;
-    font-family: 'Itim', cursive;
-    font-size: 2rem;
-    padding: 1rem;
-`
+
 export const HeaderContainer = styled.div `
    
     height: 7rem;

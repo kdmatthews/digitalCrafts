@@ -1,12 +1,13 @@
 import React, { useMemo } from 'react';
 import "./SignUpStyle.css";
-import { useDispatch } from 'react-redux';
+import { useDispatch, useSelector } from 'react-redux';
 import debounce from "lodash.debounce";
 
 
 export default function SignUpForm() {
    
     const dispatch = useDispatch()
+    const user = useSelector(state=>state)
     const debouncedChangeHandler = useMemo(() => {
         return debounce(dispatch, 3000);
     }, []);

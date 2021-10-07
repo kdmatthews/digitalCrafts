@@ -1,9 +1,14 @@
-import React from 'react'
+import React from 'react';
+import { DashboardDiv } from '../styled-components/Dashboard';
+import ChartDashboard from './ChartDashboard';
+import WorkOrdersDashboard from './WorkOrdersDashboard';
 
 export default function Dashboard() {
     return (
-        <div>
-            <h1>Dashboard</h1>
-        </div>
+        <DashboardDiv>
+           
+            <ChartDashboard />
+            <WorkOrdersDashboard />
+        </DashboardDiv>
     )
 }
