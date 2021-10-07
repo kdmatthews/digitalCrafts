@@ -7,7 +7,7 @@ import debounce from "lodash.debounce";
 export default function SignUpForm() {
    
     const dispatch = useDispatch()
-    const user = useSelector(state=>state)
+    const user = useSelector((state) =>state);
     const debouncedChangeHandler = useMemo(() => {
         return debounce(dispatch, 3000);
     }, []);

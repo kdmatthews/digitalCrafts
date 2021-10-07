@@ -1,10 +1,13 @@
 import React from 'react'
-import { WorkOrderDiv } from '../styled-components/Dashboard'
+import { WorkHeader, WorkOrderDiv, WorkParagraph } from '../styled-components/Dashboard'
 
 export default function WorkOrdersDashboard() {
     return (
         <WorkOrderDiv>
-            <h1>Work Order</h1>
+            <WorkHeader>Work Order</WorkHeader>
+            <WorkParagraph>Item1</WorkParagraph>
+            <WorkParagraph>Item2</WorkParagraph>
+            <WorkParagraph>Item3</WorkParagraph>
         </WorkOrderDiv>
     )
 }

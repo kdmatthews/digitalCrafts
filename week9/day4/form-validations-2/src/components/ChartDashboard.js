@@ -30,7 +30,7 @@ const state = {
 export default class ChartDashboard extends React.Component {
   render() {
     return (
-      <div>
+      <ChartDiv>
         <Pie
           data={state}
           options={{
@@ -47,7 +47,7 @@ export default class ChartDashboard extends React.Component {
         />
 
         
-      </div>
+      </ChartDiv>
     );
   }
 }
