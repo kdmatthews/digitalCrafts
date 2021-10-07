@@ -21,7 +21,7 @@ export const WelcomeDiv = styled.div`
     /* display: grid;
     grid-template-columns: 1fr 1fr; */
     display: flex;
-    padding-left: 50%;
+    
   
     
 `

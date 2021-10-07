@@ -65,8 +65,8 @@ export default function Header(props) {
                 <Img src={[userImage]} alt="" />
                 </WelcomeDiv>
          
-            <button onClick={()=> dispatch({type: 'SET_USERNAME', payload: "poop"})}>Dispatch Action</button>
-            <button onClick={()=> dispatch({type: 'SET_RESTAURANTS', payload: ["Chilis", "Kelp", "Trattorias", "813Pho", "Wine Exchange"]})}>restaurants</button>
+            {/* <button onClick={()=> dispatch({type: 'SET_USERNAME', payload: "poop"})}>Dispatch Action</button>
+            <button onClick={()=> dispatch({type: 'SET_RESTAURANTS', payload: ["Chilis", "Kelp", "Trattorias", "813Pho", "Wine Exchange"]})}>restaurants</button> */}
            
         </HeaderContainer>
        

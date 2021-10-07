@@ -10,7 +10,7 @@ export const DashboardDiv = styled.div`
 `
 
 export const ChartDiv = styled.div`
-    border: 1px solid black;
+    border: 2px solid black;
     border-radius: 2px;
     text-align: center;
     padding: 2rem;
@@ -22,7 +22,7 @@ export const WorkOrderDiv = styled.div`
     border-radius: 2px;
     
     text-align: center;
-    border: 1px black solid;
+    border: 2px black solid;
     background-color: lightblue;
     padding: 2rem;
     background-color: white;
