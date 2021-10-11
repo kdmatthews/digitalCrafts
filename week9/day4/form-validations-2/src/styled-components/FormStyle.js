@@ -6,7 +6,7 @@ export const FormDiv = styled.div`
     padding: 2rem;
     width: 15rem;
     border-radius: 5px;
-    margin-top: 6rem;
+    margin-top: 4rem;
     margin-left: 20%;
     
     

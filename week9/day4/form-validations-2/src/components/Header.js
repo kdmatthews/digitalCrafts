@@ -6,6 +6,7 @@ import { useDispatch, useSelector } from 'react-redux';
 
 
 
+
 const URL = "https://randomuser.me/api/";
 export default function Header(props) {
     const viewSidebar = props.viewSidebar
@@ -13,10 +14,11 @@ export default function Header(props) {
     const [user, setUser] = useState({})
     const [counter, setCounter] = useState(0);
     const dispatch = useDispatch()
-    const userdata = useSelector(state=>state.userData.name?.first)
-    const userLastName = useSelector(state=>state.userData.name?.last)
-    const userImage = useSelector(state=>state.userData.picture?.large)
-   
+    const userdata = useSelector(state=>state.UserData.userData.name?.first)
+    const userLastName = useSelector(state=>state.UserData.userData.name?.last)
+    const userImage = useSelector(state=>state.UserData.userData.picture?.large)
+    console.log(userdata)
+    
     
     // useEffect
     // hook that fires when the component is mounted
