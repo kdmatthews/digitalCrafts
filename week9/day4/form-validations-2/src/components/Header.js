@@ -14,6 +14,7 @@ export default function Header(props) {
     const [user, setUser] = useState({})
     const [counter, setCounter] = useState(0);
     const dispatch = useDispatch()
+    const userInfo = useSelector((state)=> state.LoginInfo.loginUser)
     const userdata = useSelector(state=>state.UserData.userData.name?.first)
     const userLastName = useSelector(state=>state.UserData.userData.name?.last)
     const userImage = useSelector(state=>state.UserData.userData.picture?.large)
@@ -62,9 +63,9 @@ export default function Header(props) {
                 { viewSidebar ? "Hide Sidebar" : "Show Sidebar" }
                 </SideBarButton>
                 <WelcomeDiv>
-                <WelcomeName>{[userdata]} {[userLastName]}</WelcomeName>
+                <WelcomeName>{userInfo} </WelcomeName>
            
-                <Img src={[userImage]} alt="" />
+                {/* <Img src={[userImage]} alt="" /> */}
                 </WelcomeDiv>
          
             {/* <button onClick={()=> dispatch({type: 'SET_USERNAME', payload: "poop"})}>Dispatch Action</button>

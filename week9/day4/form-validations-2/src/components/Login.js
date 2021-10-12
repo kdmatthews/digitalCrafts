@@ -2,6 +2,7 @@ import React, { useState } from 'react'
 import { FormDiv, MainDiv, Input, InputDiv, Forgotpassword, RegisterButton, SignInButton, LoginHeader, SignUp, RememberMe  } from '../styled-components/FormStyle';
 import { createClient } from '@supabase/supabase-js';
 import { useHistory } from "react-router-dom";
+import { useDispatch } from 'react-redux';
 
 // Create a single supabase client for interacting with your database 
 const supabase = createClient("https://jfrtzyokxuzffqtuugvh.supabase.co", 
@@ -9,6 +10,7 @@ const supabase = createClient("https://jfrtzyokxuzffqtuugvh.supabase.co",
 export default function Login(props) {
     const [formData, setFormData] = useState({username: "", password: ""});
     const history = useHistory();
+    const dispatch = useDispatch();
     console.log(formData)
     
 
@@ -21,7 +23,11 @@ export default function Login(props) {
           })
           if (session) {
           history.push("/dashboard");
-          console.log(user, session, error);
+          console.log(formData.username)
+        dispatch({type: "GET_USER", payload: formData.username})
+        //   console.log(user, session, error);
+    }   else {
+        alert(error.message);
     }
 };
 
@@ -34,6 +40,8 @@ export default function Login(props) {
           })
           if( user ) {
               history.push("/login");
+          } else {
+              alert(error.message);
           }
           console.log(error)
     }
