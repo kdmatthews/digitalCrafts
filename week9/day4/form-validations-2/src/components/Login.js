@@ -1,8 +1,42 @@
 import React, { useState } from 'react'
 import { FormDiv, MainDiv, Input, InputDiv, Forgotpassword, RegisterButton, SignInButton, LoginHeader, SignUp, RememberMe  } from '../styled-components/FormStyle';
+import { createClient } from '@supabase/supabase-js';
+import { useHistory } from "react-router-dom";
+
+// Create a single supabase client for interacting with your database 
+const supabase = createClient("https://jfrtzyokxuzffqtuugvh.supabase.co", 
+"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJyb2xlIjoiYW5vbiIsImlhdCI6MTYzMTIwNTA5NCwiZXhwIjoxOTQ2NzgxMDk0fQ.PiBzH9tPOgoLerSrGMRKUfsdXVonFWXGiQ8VX2YU-Ic");
 export default function Login(props) {
-    const [formData, setFormData] = useState({});
- 
+    const [formData, setFormData] = useState({username: "", password: ""});
+    const history = useHistory();
+    console.log(formData)
+    
+
+    // login user
+    const login = async (e) => {
+        e.preventDefault();
+        const { user, session, error } = await supabase.auth.signIn({
+            email: formData.username,
+            password: formData.password,
+          })
+          if (session) {
+          history.push("/dashboard");
+          console.log(user, session, error);
+    }
+};
+
+    // register user
+    const register = async (e) => {
+        e.preventDefault();
+        const { user, session, error } = await supabase.auth.signUp({
+            email: formData.username,
+            password: formData.password,
+          })
+          if( user ) {
+              history.push("/login");
+          }
+          console.log(error)
+    }
     return (
         
         <FormDiv>
@@ -15,8 +49,8 @@ export default function Login(props) {
                 <Input onChange={(e)=>setFormData({...formData,[e.target.name]:e.target.value})} type="password" placeholder="Password" name="password" value={formData?.password}/>
                 <input type="checkbox" className="checkbox"/> <RememberMe for="checkbox">Remember Me </RememberMe>
                 
-               {props?.register ? <SignInButton>Register</SignInButton> :
-                <SignInButton>LOGIN</SignInButton>}
+               {props?.register ? <SignInButton onClick={(e)=>register(e)} type="submit">Register</SignInButton> :
+                <SignInButton onClick={(e)=>login(e)}type="submit">LOGIN</SignInButton>}
                 <Forgotpassword>FORGOT YOUR PASSWORD?</Forgotpassword>
                 <SignUp>New here? Sign Up</SignUp>
                 </InputDiv>
