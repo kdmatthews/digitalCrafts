@@ -1,7 +1,8 @@
 import React, { useState } from 'react'
 import { FormDiv, MainDiv, Input, InputDiv, Forgotpassword, RegisterButton, SignInButton, LoginHeader, SignUp, RememberMe  } from '../styled-components/FormStyle';
-export default function Login() {
+export default function Login(props) {
     const [formData, setFormData] = useState({});
+ 
     return (
         
         <FormDiv>
@@ -14,7 +15,8 @@ export default function Login() {
                 <Input onChange={(e)=>setFormData({...formData,[e.target.name]:e.target.value})} type="password" placeholder="Password" name="password" value={formData?.password}/>
                 <input type="checkbox" className="checkbox"/> <RememberMe for="checkbox">Remember Me </RememberMe>
                 
-                <SignInButton>LOGIN</SignInButton>
+               {props?.register ? <SignInButton>Register</SignInButton> :
+                <SignInButton>LOGIN</SignInButton>}
                 <Forgotpassword>FORGOT YOUR PASSWORD?</Forgotpassword>
                 <SignUp>New here? Sign Up</SignUp>
                 </InputDiv>

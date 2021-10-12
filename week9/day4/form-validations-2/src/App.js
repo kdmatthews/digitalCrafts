@@ -12,17 +12,24 @@ import Garage from "./components/Garage";
 import {useState} from "react"
 function App() {
   const[viewSidebar, setViewSidebar] = useState(true)
-  return (
+  const [loggedIn, setLoggedIn] = useState(false);
+ 
+  const register = true
+    return (
   <Router>
     <Switch>
+    <Route path="/login">
+        <Login />
+      </Route>
+      <Route path="/register">
+        <Login register={register}/>
+      </Route>
 
       <MainDiv>
       <Header viewSidebar={viewSidebar} setViewSidebar={setViewSidebar}/>
       {/* {viewSidebar ? <Sidebar viewSidebar={viewSidebar}/> : <></>} */}
       <Sidebar viewSidebar={viewSidebar}/>
-      <Route path="/login">
-        <Login />
-      </Route>
+     
       <Route exact path="/">
         <Home />
       </Route>
