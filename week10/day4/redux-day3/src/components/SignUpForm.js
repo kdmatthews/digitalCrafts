@@ -2,6 +2,8 @@ import React, { useMemo } from 'react';
 import "./SignUpStyle.css";
 import { useDispatch, useSelector } from 'react-redux';
 import debounce from "lodash.debounce";
+import { ConsoleLogVariable, IncrementCounter, DecrementCounter } from '../actions/SignUpFormActions';
+import { DECREMENT_COUNTER, INCREMENT_COUNTER } from '../action-types/counter-types';
 
 
 export default function SignUpForm() {
@@ -17,6 +19,12 @@ export default function SignUpForm() {
         dispatch({type: "INCREMENT_COUNTER"});
         dispatch({type: "FILL_INFO"});
     }
+
+
+    const ConsoleLogVariable = (name) =>{
+        console.log(name)
+    }
+    
     return (
         <div className="signupform">
 
@@ -27,11 +35,18 @@ export default function SignUpForm() {
             <input onChange={(e) =>debouncedChangeHandler({ type: "SIGNUPFORM_PASSWORD", payload:e.target.value, })}type="password" placeholder="Password"/>
             <input type="submit"  />
             </form>
-            {counter}
+            {/* {counter}
             <div>
             <button onClick={() => DOTWOFUNCTION()}>Increment Counter</button>
-            <button onClick={() => dispatch({type: "DECREMENT_COUNTER"})}>Decrement Counter</button>
+            <button onClick={() => dispatch({type: "DECREMENT_COUNTER"})}>Decrement Counter</button> */}
+           <div>
+            <button onClick={()=> ConsoleLogVariable("Kayla")}>Print To Conolse</button>
             </div>
+            <div>
+            <button onClick={()=> IncrementCounter(dispatch, "incremented")}>Increment</button>
+            <button onClick={()=> DecrementCounter(dispatch, "decremented")}>Decrement</button>
+            </div>
+
         </div>
     )
 }
