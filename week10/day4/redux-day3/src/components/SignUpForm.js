@@ -3,11 +3,11 @@ import "./SignUpStyle.css";
 import { useDispatch, useSelector } from 'react-redux';
 import debounce from "lodash.debounce";
 import { ConsoleLogVariable, IncrementCounter, DecrementCounter } from '../actions/SignUpFormActions';
-import { DECREMENT_COUNTER, INCREMENT_COUNTER } from '../action-types/counter-types';
+
 
 
 export default function SignUpForm() {
-   
+    
     const dispatch = useDispatch()
     const user = useSelector((state) =>state);
     const counter = useSelector((state) => state.Counter);
