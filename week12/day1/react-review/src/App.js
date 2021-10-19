@@ -2,28 +2,13 @@
 import './App.css';
 import { useState } from "react";
 import StudentContainer from './components/StudentContainer';
-export const data = [
-  {name: "Jose"},
-  {name: "Britt"},
-  {name: "Matt"},
-  {name: "Dustin"},
-  {name: "Justin"},
-  {name: "Kayla"},
-  {name: "Deanna"},
-  {name: "Cameron"},
-  {name: "Tim"},
-  {name: "Ron"},
-  {name: "Jamie"},
-  {name: "Brande"},
-  {name: "Jordan"},
-  {name: "Xavier"},
-  {name: "Jenny"},
-  {name: "Pam"},
-]
+import {useDispatch, useSelector} from "react-redux";
 function App() {
 
   // const [students, setStudents] = useState(data);
   const [counter, setCounter] = useState(0);
+  const dispatch= useDispatch()
+  // dispatch({ type: "GET_STUDENTS "})
   // state is a place that we can hold/store data
   // We store state in functional components using hooks
   // the process of passing state to another component is called props
