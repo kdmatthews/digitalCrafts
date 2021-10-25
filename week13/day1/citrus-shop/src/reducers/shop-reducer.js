@@ -1,4 +1,4 @@
-import { GET_CITRUSDATA } from "../action-types/shop-types";
+
 const initialState =[
    {
    name: "Valencia",
@@ -41,8 +41,7 @@ const initialState =[
 
 const ShopInfo = (state=initialState, action) => {
     switch(action.type){
-        case GET_CITRUSDATA:
-            return {...state}
+       
         default:
             return state
     }

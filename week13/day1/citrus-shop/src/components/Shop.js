@@ -1,7 +1,5 @@
 import React from 'react';
-import ShopContainer from './ShopContainer';
-import { useEffect } from 'react';
-import { useSelector } from 'react-redux';
+
 
 export default function Shop(props) {
 
