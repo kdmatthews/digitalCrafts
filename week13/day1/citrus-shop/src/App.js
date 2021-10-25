@@ -1,7 +1,7 @@
 
 import './App.css';
 import Navbar from './components/Navbar';
-import Shop from './components/Shop';
+import ShopContainer from './components/ShopContainer';
 import Cart from './components/Cart';
 import About from './components/About';
 
@@ -19,7 +19,7 @@ function App() {
         <About />
       </Route>
       <Route exact path="/shop">
-        <Shop />
+        <ShopContainer />
       </Route>
       <Route exact path="/cart">
         <Cart />
