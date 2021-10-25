@@ -4,7 +4,7 @@ import { useDispatch } from "react-redux";
 
 export default function Shop(props) {
     const dispatch = useDispatch();
-
+    const { item } = props;
     // useEffect(() => {
 
     // },[])
@@ -13,10 +13,10 @@ export default function Shop(props) {
     return (
         <div>
            
-            <h1>{props?.item?.name}</h1>
-            <img src={props?.item?.image} alt="" />
-            <h3>${props?.item?.price}</h3>
-            <button onClick={()=>MoveItemToCart(dispatch, props?.item)}>Add to Cart</button>
+            <h1>{item?.name}</h1>
+            <img src={item?.image} alt="" />
+            <h3>${item?.price}</h3>
+            <button onClick={()=>MoveItemToCart(dispatch, item)}>Add to Cart</button>
             
         </div>
     )
