@@ -1,0 +1,1 @@
+export const MOVE_TO_CART = "MOVE_TO_CART";
