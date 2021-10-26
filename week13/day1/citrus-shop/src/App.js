@@ -7,7 +7,7 @@ import About from './components/About';
 
 
 import { useSelector } from "react-redux";
-import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
+import {BrowserRouter as Router, Switch, Route, Link, Redirect} from "react-router-dom";
 
 function App() {
   return (

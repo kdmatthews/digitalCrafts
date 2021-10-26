@@ -1,9 +1,10 @@
-import React from 'react'
+import React from 'react';
+import { Link } from 'react-router-dom';
 
 export default function NavBarLinks(props) {
     return (
         <>
-            <a href={props.linkData.path}>{props.linkData.name}</a>
+            <Link to={props.linkData.path}>{props.linkData.name}</Link>
         </>
     )
 }

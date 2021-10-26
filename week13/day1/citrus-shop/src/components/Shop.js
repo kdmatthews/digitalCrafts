@@ -1,16 +1,13 @@
 import React from 'react';
 import { MoveItemToCart } from '../actions/cart-actions';
-import { useDispatch } from "react-redux";
+import { useDispatch, useSelector } from "react-redux";
 
 export default function Shop(props) {
     const dispatch = useDispatch();
     const { item } = props;
-  
-    // useEffect(() => {
+    // const cartInfo = useSelector((state)=>state.CartInfo)
+    // console.log(cartInfo)
 
-    // },[])
-    // const citrusData = useSelector((state)=>state.ShopInfo);
-    // console.log(citrusData)
     return (
         <div>
            
