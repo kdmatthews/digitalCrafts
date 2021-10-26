@@ -5,6 +5,7 @@ import { useDispatch } from "react-redux";
 export default function Shop(props) {
     const dispatch = useDispatch();
     const { item } = props;
+  
     // useEffect(() => {
 
     // },[])
