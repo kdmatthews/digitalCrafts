@@ -1,6 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
-import { TotalHeader } from '../styled-components/Cart-style';
+import { TotalHeader, TotalDiv, CheckoutButton, YourCart } from '../styled-components/Cart-style';
 
 export default function Total() {
 
@@ -19,10 +19,14 @@ export default function Total() {
         
     }
     return (
-      
-        <div>
+      <>
+       <YourCart>Your Cart</YourCart>
+        <TotalDiv>
+           
           <TotalHeader>Total: {formatter.format(total)}</TotalHeader>
+          <CheckoutButton>Checkout</CheckoutButton>
         
-        </div>
+        </TotalDiv>
+        </>
     )
 }
