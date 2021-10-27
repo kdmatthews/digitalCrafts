@@ -8,13 +8,13 @@ import About from './components/About';
 
 import { useSelector } from "react-redux";
 import {BrowserRouter as Router, Switch, Route, Link, Redirect} from "react-router-dom";
-
+import { AppDiv } from "./styled-components/App-style"
 function App() {
   return (
     <Router>
       <Switch>
 
-    <div className="App">
+    <AppDiv>
       <Navbar />
       <Route exact path="/">
         <About />
@@ -25,7 +25,7 @@ function App() {
       <Route exact path="/cart">
         <CartContainer />
       </Route>
-    </div>
+    </AppDiv>
       </Switch>
     </Router>
   );

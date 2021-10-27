@@ -1,5 +1,7 @@
 import { MOVE_TO_CART, REMOVE_FROM_CART } from "../action-types/cart-types";
+import { TOTAL_CART } from "../action-types/total-types";
 const initialState = [];
+
 
 const CartInfo = (state=initialState, action) => {
     switch(action.type){
@@ -8,7 +10,10 @@ const CartInfo = (state=initialState, action) => {
         case REMOVE_FROM_CART:
             const removeFruit = state;
             const removeFruitFiltered = removeFruit.filter((fruit)=> fruit !== action.payload);
-            return removeFruitFiltered;
+            return removeFruitFiltered;  
+        case TOTAL_CART:
+            return [...state, action.payload.price]
+
         default:
             return state
     }

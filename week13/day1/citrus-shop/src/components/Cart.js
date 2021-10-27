@@ -4,6 +4,7 @@ import { RemoveItemFromCart } from '../actions/cart-actions';
 
 
 
+
 export default function Cart(props) {
     const { item } = props;
     const dispatch = useDispatch()
@@ -14,8 +15,10 @@ export default function Cart(props) {
         <h1>{item?.name}</h1>
         <img src={item?.image} alt="" />
         <h3>${item?.price}</h3>
+        {/* <h4>{item?.quantity}</h4> */}
+       
         <button onClick={()=>RemoveItemFromCart(dispatch, item)}>Remove From Cart</button>
-                 
+        
            
         </div>
     )
