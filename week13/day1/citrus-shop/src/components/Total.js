@@ -1,5 +1,6 @@
 import React from 'react';
 import { useSelector } from 'react-redux';
+import { TotalHeader } from '../styled-components/Cart-style';
 
 export default function Total() {
 
@@ -20,7 +21,7 @@ export default function Total() {
     return (
       
         <div>
-          <h1>Total: {formatter.format(total)}</h1>
+          <TotalHeader>Total: {formatter.format(total)}</TotalHeader>
         
         </div>
     )

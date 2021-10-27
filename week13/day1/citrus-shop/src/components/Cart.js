@@ -1,6 +1,7 @@
 import React from 'react';
 import { useDispatch } from "react-redux";
 import { RemoveItemFromCart } from '../actions/cart-actions';
+import { CartButton, CartPlantName, CartPrice, CartImage } from '../styled-components/Cart-style';
 
 
 
@@ -12,12 +13,12 @@ export default function Cart(props) {
        
         <div>
 
-        <h1>{item?.name}</h1>
-        <img src={item?.image} alt="" />
-        <h3>${item?.price}</h3>
+        <CartPlantName>{item?.name}</CartPlantName>
+        <CartImage src={item?.image} alt="" />
+        <CartPrice>${item?.price}</CartPrice>
         {/* <h4>{item?.quantity}</h4> */}
        
-        <button onClick={()=>RemoveItemFromCart(dispatch, item)}>Remove From Cart</button>
+        <CartButton onClick={()=>RemoveItemFromCart(dispatch, item)}>Remove From Cart</CartButton>
         
            
         </div>

@@ -2,6 +2,7 @@ import React from 'react';
 import { useSelector } from 'react-redux';
 import Cart from './Cart';
 import Total from './Total';
+import { CartDiv } from '../styled-components/Cart-style';
 
 export default function CartContainer() {
     
@@ -9,7 +10,7 @@ export default function CartContainer() {
     const array = [];
     console.log(cartInfo)
     return (
-        <div>
+        <CartDiv>
             <Total />
             
             {cartInfo?.map((item) => (
@@ -18,6 +19,6 @@ export default function CartContainer() {
             ))}
           
           
-        </div>
+        </CartDiv>
     )
 }
