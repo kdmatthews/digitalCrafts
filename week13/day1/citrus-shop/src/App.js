@@ -2,18 +2,19 @@
 import './App.css';
 import Navbar from './components/Navbar';
 import ShopContainer from './components/ShopContainer';
-import Cart from './components/Cart';
+import CartContainer from './components/CartContainer';
 import About from './components/About';
 
-import { useSelector } from "react-redux";
-import {BrowserRouter as Router, Switch, Route, Redirect} from "react-router-dom";
 
+import { useSelector } from "react-redux";
+import {BrowserRouter as Router, Switch, Route, Link, Redirect} from "react-router-dom";
+import { AppDiv } from "./styled-components/App-style"
 function App() {
   return (
     <Router>
       <Switch>
 
-    <div className="App">
+    <AppDiv>
       <Navbar />
       <Route exact path="/">
         <About />
@@ -22,9 +23,9 @@ function App() {
         <ShopContainer />
       </Route>
       <Route exact path="/cart">
-        <Cart />
+        <CartContainer />
       </Route>
-    </div>
+    </AppDiv>
       </Switch>
     </Router>
   );
