@@ -22,9 +22,9 @@ export default function Total() {
       <>
        <YourCart>Your Cart</YourCart>
         <TotalDiv>
-           
+          
           <TotalHeader>Total: {formatter.format(total)}</TotalHeader>
-          <CheckoutButton>Checkout</CheckoutButton>
+          <CheckoutButton onClick={()=>alert("Thank you for trusting us with your citrus needs.")}>Checkout</CheckoutButton>
         
         </TotalDiv>
         </>

@@ -1,14 +1,22 @@
 import styled from "styled-components";
 
 export const ShopDiv = styled.div`
+/* grid-area: container; */
  display: grid;
  grid-template-columns: 1fr;
+ position: absolute;
+ margin-top: 4rem;
+ margin-left: 1.2rem;
 
  @media (min-width: 600px) and (max-width: 1000px){
      grid-template-columns: 1fr 1fr;
+     margin-top: 5.5rem;
+    margin-left: 3.2rem;
  }
  @media (min-width: 1001px) {
     grid-template-columns: 1fr 1fr 1fr;
+    margin-top: 7rem;
+    margin-left: .2rem;
  }
 
 `

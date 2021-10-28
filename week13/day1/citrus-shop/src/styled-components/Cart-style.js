@@ -1,15 +1,21 @@
 import styled from "styled-components";
 
 export const CartDiv = styled.div`
-    width: 95vw;
+    
+    /* grid-area: container; */
+    width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
+    position: absolute;
+    margin-top: 5rem;
 
     @media (min-width: 600px) and (max-width: 1000px){
-      width: 98vw;
+      /* width: 98vw; */
+      margin-top: 6rem;
 }
     @media (min-width: 1001px) {
-        width: 98vw;
+        /* width: 98vw; */
+        margin-top: 8rem;
     
  }
 `
@@ -20,6 +26,7 @@ export const TotalDiv = styled.div`
     
 `
 export const CartItem = styled.div`
+    
     display: grid;
     grid-template-areas:
     "picture details"
@@ -167,8 +174,9 @@ export const CartPrice = styled.h4`
 
 
 export const YourCart = styled.h2`
-    margin-top: 1rem;
+    margin-top: 0;
     margin-bottom: 0;
+   
 
     @media (min-width: 600px) and (max-width: 1000px){
         font-size: 2rem;
