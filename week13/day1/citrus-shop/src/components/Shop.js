@@ -18,8 +18,8 @@ export default function Shop(props) {
             <Price>${item?.price}</Price>
             <PlantName>{item?.name}</PlantName>
             {/* <button onClick={() =>IncrementQuantity(dispatch, item)}>Increment</button>
-            <button onClick={() =>DecrementQuantity(dispatch, item)}>Decrement</button> 
-          
+            <button onClick={() =>DecrementQuantity(dispatch, item)}>Decrement</button>  */}
+{/*           
             <h4>{item?.quantity}</h4> */}
             <Button onClick={()=>MoveItemToCart(dispatch, item)}>Add to Cart</Button>
             

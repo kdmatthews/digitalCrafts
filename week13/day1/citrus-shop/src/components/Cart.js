@@ -20,14 +20,16 @@ export default function Cart(props) {
         <DetailsDiv>
         <CartPlantName>{item?.name}</CartPlantName>
         <CartSize>Size: {item?.size}</CartSize>
+        {/* <h1>{item?.quantity}</h1> */}
         </DetailsDiv>
-{/* 
-        <QuantityDiv>
+
+        {/* <QuantityDiv>
         <CartQuantity>Quantity: {item?.quantity}</CartQuantity>
-        </QuantityDiv> */}
+        </QuantityDiv>  */}
 
         <PriceDiv>
-        <CartPrice>${item?.price}</CartPrice>
+        <CartPrice>${item?.price} </CartPrice>
+        {/* <CartPrice>${item?.price * item?.quantity} </CartPrice> */}
         <CartButton onClick={()=>RemoveItemFromCart(dispatch, item)}>X</CartButton>
         </PriceDiv>
            

@@ -1,9 +1,13 @@
 import styled from "styled-components";
 
 export const CartDiv = styled.div`
+    
+    /* grid-area: container; */
     width: 95vw;
     display: grid;
     grid-template-columns: 1fr;
+    position: absolute;
+    margin-top: 8rem;
 
     @media (min-width: 600px) and (max-width: 1000px){
       width: 98vw;
@@ -20,6 +24,7 @@ export const TotalDiv = styled.div`
     
 `
 export const CartItem = styled.div`
+    
     display: grid;
     grid-template-areas:
     "picture details"
@@ -167,7 +172,7 @@ export const CartPrice = styled.h4`
 
 
 export const YourCart = styled.h2`
-    margin-top: 1rem;
+    margin-top: 0;
     margin-bottom: 0;
 
     @media (min-width: 600px) and (max-width: 1000px){
