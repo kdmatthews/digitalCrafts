@@ -16,6 +16,10 @@ export const MainDiv = styled.div`
 
 export const FormDiv = styled.div`
     background-color: #F49728;
+    display: flex;
+    flex-direction: column;
+    padding: 2rem;
+    margin: .5rem;
 `
 
 export const AboutDiv = styled.div`
@@ -33,4 +37,25 @@ export const AboutParagraph = styled.p`
     margin: 1rem;
     font-size: 1.3rem;
     
+`
+export const ContactHeader = styled.h1`
+    color: #0F7C4F;
+    text-align: center;
+    margin-top: 0;
+`
+export const FormInput = styled.input`
+    margin-bottom: .5rem;
+`
+export const FormTextArea = styled.textarea`
+    margin-bottom: .5rem;
+`
+export const FormButton = styled.button`
+    background-color:#BAC6AD;
+    border-radius: 4px;
+    border: none;
+    color: #0F7C4F;
+    height: 2rem;
+    width: 14rem;
+    margin-left: 10%;
+    font-size: 1rem;
 `

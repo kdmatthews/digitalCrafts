@@ -1,5 +1,5 @@
 import React from 'react';
-import { AboutDiv, MainDiv, FormDiv, AboutHeader, AboutParagraph } from '../styled-components/About-style';
+import { AboutDiv, MainDiv, FormDiv, AboutHeader, AboutParagraph, ContactHeader, FormButton, FormInput, FormTextArea } from '../styled-components/About-style';
 
 
 export default function About() {
@@ -28,12 +28,12 @@ export default function About() {
            
             <form>
                 <FormDiv>
-                <h2>Contact Us</h2>
-                <input type="text" placeholder="Name"/>
-                <input type="email" placeholder="Email" />
-                <input type="text" placeholder="Subject"/>
-               <textarea name="" id="" cols="30" rows="10" placeholder="Message"></textarea>
-               <button type="submit">Submit</button>
+                <ContactHeader>Contact Us</ContactHeader>
+                <FormInput type="text" placeholder="Name"/>
+                <FormInput type="email" placeholder="Email" />
+                <FormInput type="text" placeholder="Subject"/>
+               <FormTextArea name="" id="" cols="30" rows="10" placeholder="Message"></FormTextArea>
+               <FormButton type="submit">Submit</FormButton>
                </FormDiv>
             </form>
 
