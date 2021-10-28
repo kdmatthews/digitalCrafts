@@ -6,6 +6,11 @@ export const NavBarDiv = styled.div`
     justify-content: flex-start;
     background-color: #75E6DA;
     height: 7vh;
+
+    img{
+        width: 2rem;
+        height: 2rem;
+    }
     
 `
 export const Hamburger = styled.img`

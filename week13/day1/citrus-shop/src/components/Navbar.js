@@ -2,7 +2,7 @@ import React from 'react';
 import { navbarData, NavbarData } from './NavbarData';
 import NavBarLinks from './NavBarLinks';
 import { NavBarDiv, Hamburger } from '../styled-components/Navbar-style';
-import meat from "../assets/meat.png";
+import menu from "../assets/menu.png";
 
 export default function Navbar(props) {
     const viewSidebar = props.viewSidebar
@@ -12,7 +12,7 @@ export default function Navbar(props) {
         <>
         <NavBarDiv>
             <button onClick={()=>setViewSidebar(!viewSidebar)}>
-                { viewSidebar ? <Hamburger src={meat} alt="" /> : <Hamburger src={meat} alt="" />}
+                { viewSidebar ? <Hamburger src={menu} alt="" /> : <Hamburger src={menu} alt="" />}
                 {/* <img src={meat} alt="" /> */}
                 </button>
                 <h1>Citrus in the City</h1>

@@ -7,13 +7,25 @@ export const SideBarDiv = styled.div`
     width: 10rem;
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
     align-items: center;
-    margin-top: 0;
+    margin-top:0;
     font-size: 1.5rem;
     position: relative;
     z-index: 2;
-    
-    
 
+    img{
+        width: 2rem;
+        height: 2rem;
+    
+    }
+
+    a{
+      text-decoration:none;
+      color: black;
+    }
+
+    
+`
+export const LinkDiv = styled.div`
+    margin: 1rem;
 `
