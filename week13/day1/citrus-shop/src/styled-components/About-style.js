@@ -13,7 +13,20 @@ export const MainDiv = styled.div`
     
  }
 ` 
+export const ImageHeader = styled.div`
+    background-image: url("https://images.unsplash.com/photo-1590004829017-f30ef3c5faf1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTJ8fGNpdHJ1c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60");
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 13rem;
 
+    @media (min-width: 600px) and (max-width: 1000px){
+      height: 20rem;
+}
+    @media (min-width: 1001px) {
+        height: 27rem;
+    
+ }
+`
 export const FormDiv = styled.div`
     background-color: #F49728;
     display: flex;

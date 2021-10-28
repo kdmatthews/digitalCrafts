@@ -1,5 +1,5 @@
 import React from 'react';
-import { AboutDiv, MainDiv, FormDiv, AboutHeader, AboutParagraph, ContactHeader, FormButton, FormInput, FormTextArea } from '../styled-components/About-style';
+import { AboutDiv, MainDiv, FormDiv, AboutHeader, AboutParagraph, ContactHeader, FormButton, FormInput, FormTextArea, ImageHeader } from '../styled-components/About-style';
 
 
 export default function About() {
@@ -10,8 +10,8 @@ export default function About() {
            
             <div>
             {/* <img src="https://images.unsplash.com/photo-1612483122117-0c6f30110083?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTB8fGNpdHJ1c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=500&q=60" alt="" /> */}
-   
-            <img src="https://images.unsplash.com/photo-1590004829017-f30ef3c5faf1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTJ8fGNpdHJ1c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="" />
+            <ImageHeader></ImageHeader>
+            {/* <img src="https://images.unsplash.com/photo-1590004829017-f30ef3c5faf1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTJ8fGNpdHJ1c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60" alt="" /> */}
            
             </div>
             <AboutDiv>
