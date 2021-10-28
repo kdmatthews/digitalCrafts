@@ -3,17 +3,19 @@ import styled from "styled-components";
 export const CartDiv = styled.div`
     
     /* grid-area: container; */
-    width: 95vw;
+    width: 100vw;
     display: grid;
     grid-template-columns: 1fr;
     position: absolute;
-    margin-top: 8rem;
+    margin-top: 5rem;
 
     @media (min-width: 600px) and (max-width: 1000px){
-      width: 98vw;
+      /* width: 98vw; */
+      margin-top: 6rem;
 }
     @media (min-width: 1001px) {
-        width: 98vw;
+        /* width: 98vw; */
+        margin-top: 8rem;
     
  }
 `
@@ -174,6 +176,7 @@ export const CartPrice = styled.h4`
 export const YourCart = styled.h2`
     margin-top: 0;
     margin-bottom: 0;
+   
 
     @media (min-width: 600px) and (max-width: 1000px){
         font-size: 2rem;

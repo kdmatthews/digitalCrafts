@@ -8,7 +8,7 @@ export default function Sidebar(props) {
     const viewSidebar = props.viewSidebar;
     return (
         <>
-        {viewSidebar ?  
+        {!viewSidebar ?  
         <SideBarDiv>
     
             {navbarData?.map((linkData)=>(
