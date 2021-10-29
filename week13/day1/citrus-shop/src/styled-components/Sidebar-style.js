@@ -1,27 +1,28 @@
 import styled from "styled-components";
 
 export const SideBarDiv = styled.div`
-    /* grid-area: sidebar; */
+    grid-area: sidebar;
     background-color: #BAC6AD;
-    height: 100vh;
+    height: 95vh;
     width: 10rem;
     display: flex;
     flex-direction: column;
     align-items: center;
-    margin-top:0;
+    /* margin-top:0; */
     font-size: 1.5rem;
     position: relative;
     z-index: 2;
-
-    @media (min-width: 600px) and (max-width: 1000px){
+ 
+     @media (min-width: 600px) and (max-width: 1000px){
         width: 12rem;
         
 }
     @media (min-width: 1001px) {
         width: 15rem;
+        
     
     
- }
+ } 
 
 
     img{

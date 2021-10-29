@@ -10,11 +10,9 @@ export const CartDiv = styled.div`
     margin-top: 5rem;
 
     @media (min-width: 600px) and (max-width: 1000px){
-      /* width: 98vw; */
       margin-top: 6rem;
 }
     @media (min-width: 1001px) {
-        /* width: 98vw; */
         margin-top: 8rem;
     
  }
@@ -101,6 +99,7 @@ export const CartButton = styled.button`
     border: none;
     height: 1.5rem;
     margin-top: 1.2rem;
+    
 
     @media (min-width: 600px) and (max-width: 1000px){
        margin-top: 1.9rem;
@@ -176,6 +175,7 @@ export const CartPrice = styled.h4`
 export const YourCart = styled.h2`
     margin-top: 0;
     margin-bottom: 0;
+    margin-left: .5rem;
    
 
     @media (min-width: 600px) and (max-width: 1000px){
@@ -192,7 +192,7 @@ export const CheckoutButton = styled.button`
     height: 2rem;
     margin-top: .6rem;
     margin-left: 0;
-    margin-right: 0;
+    margin-right: 3rem;
     background-color: orange;
     border: none;
     border-radius: 4px;

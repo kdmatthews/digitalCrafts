@@ -1,22 +1,22 @@
 import styled from "styled-components";
 
 export const ShopDiv = styled.div`
-/* grid-area: container; */
+
  display: grid;
  grid-template-columns: 1fr;
- position: absolute;
- margin-top: 4rem;
- margin-left: 1.2rem;
+ width: 99vw;
+position: absolute;
+margin-top: 5rem;
+ 
+ 
 
- @media (min-width: 600px) and (max-width: 1000px){
+ @media (min-width: 680px) and (max-width: 1050px){
      grid-template-columns: 1fr 1fr;
-     margin-top: 5.5rem;
-    margin-left: 3.2rem;
+    
  }
- @media (min-width: 1001px) {
+ @media (min-width: 1051px) {
     grid-template-columns: 1fr 1fr 1fr;
-    margin-top: 7rem;
-    margin-left: .2rem;
+
  }
 
 `
@@ -25,6 +25,8 @@ export const Image = styled.img`
     width: 20rem;
     margin-top: 1rem;
     align-self: center;
+    margin-left: .6rem;
+    margin-right: .6rem;
    
 `
 
@@ -36,6 +38,7 @@ export const ItemDiv = styled.div`
     flex-direction: column;
     margin: .5rem;
     padding-bottom: 1rem;
+    
 `
 export const Button = styled.div`
     color: #0F7C4F;
