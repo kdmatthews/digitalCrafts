@@ -6,14 +6,14 @@ export const ShopDiv = styled.div`
  grid-template-columns: 1fr;
  position: absolute;
  margin-top: 4rem;
- margin-left: 1.2rem;
+ margin-left: .7rem;
 
- @media (min-width: 600px) and (max-width: 1000px){
+ @media (min-width: 600px) and (max-width: 1050px){
      grid-template-columns: 1fr 1fr;
-     margin-top: 5.5rem;
-    margin-left: 3.2rem;
+     margin-top: 6.2rem;
+    margin-left: 9.6rem;
  }
- @media (min-width: 1001px) {
+ @media (min-width: 1051px) {
     grid-template-columns: 1fr 1fr 1fr;
     margin-top: 7rem;
     margin-left: .2rem;

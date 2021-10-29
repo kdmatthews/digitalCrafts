@@ -5,6 +5,15 @@ export const MainDiv = styled.div`
     margin-top: 3.59rem;
     width: 100vw;
 
+    @media (max-width: 325px) {
+    margin-top: 2.58rem;
+
+ }
+    @media (min-width: 540px) and (max-width: 599px) {
+        margin-top: 3.3rem;
+    
+ }
+
     @media (min-width: 600px) and (max-width: 1000px){
       margin-top: 4.59rem;
 }
@@ -18,6 +27,8 @@ export const ImageHeader = styled.div`
     background-repeat: no-repeat;
     background-size: cover;
     height: 13rem;
+    
+   
 
     @media (min-width: 600px) and (max-width: 1000px){
       height: 20rem;
@@ -45,6 +56,7 @@ export const AboutHeader = styled.h1`
     margin: 1rem;
     text-align: center;
 
+
     @media (min-width: 600px) and (max-width: 1000px){
         font-size:2.7rem;
 }
@@ -71,6 +83,8 @@ export const ContactHeader = styled.h1`
     text-align: center;
     margin-top: 0;
     margin-bottom: 1rem;
+
+   
     @media (min-width: 600px) and (max-width: 1000px){
         font-size:2.7rem;
 }
@@ -113,6 +127,24 @@ export const FormButton = styled.button`
     margin-top: .4rem;
     font-size: 1rem;
 
+    @media (max-width: 325px) {
+    width: 11.7rem;
+    height: 2rem;
+
+ }
+
+ @media (min-width: 400px) and (max-width: 414px) {
+    width: 16rem;
+    height: 2rem;
+
+ }
+
+    @media (min-width: 540px) and (max-width: 599px) {
+        font-size: 2rem;
+        height: 2.3rem;
+        width: 22rem;
+    
+ }
     @media (min-width: 600px) and (max-width: 1000px){
         font-size:2rem;
         height: 2.5rem;
@@ -124,4 +156,9 @@ export const FormButton = styled.button`
         width: 45rem;
     
  }
+ @media (min-width: 1270px) {
+       width: 58rem;
+    }
+
+ 
 `
