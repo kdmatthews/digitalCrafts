@@ -28,6 +28,8 @@ export const Image = styled.img`
     align-self: center;
     margin-left: .6rem;
     margin-right: .6rem;
+    height: 15rem;
+    width: 22rem;
    
 `
 
