@@ -187,7 +187,7 @@ export const YourCart = styled.h2`
  }
 `
 
-export const CheckoutButton = styled.button`
+export const CheckoutButton = styled.a`
     color: black;
     height: 2rem;
     margin-top: .6rem;
@@ -196,6 +196,10 @@ export const CheckoutButton = styled.button`
     background-color: orange;
     border: none;
     border-radius: 4px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-decoration: none;
     
     
     

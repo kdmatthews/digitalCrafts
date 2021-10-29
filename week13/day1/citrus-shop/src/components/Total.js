@@ -27,8 +27,9 @@ export default function Total() {
         <TotalDiv>
           
           <TotalHeader>Total: {formatter.format(total)}</TotalHeader>
-          <CheckoutButton onClick={()=>RefreshCart(dispatch)}>Checkout</CheckoutButton>
-        
+          <CheckoutButton href="/thankyou" onClick={()=>RefreshCart(dispatch)}>Checkout</CheckoutButton>
+          {/* <CheckoutButton onClick={()=>RefreshCart(dispatch)}>Checkout</CheckoutButton> */}
+
         </TotalDiv>
         </>
     )
