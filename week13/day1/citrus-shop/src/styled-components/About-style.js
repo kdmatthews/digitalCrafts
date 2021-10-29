@@ -2,25 +2,9 @@ import styled from "styled-components";
 
 export const MainDiv = styled.div`
     position:absolute;
-    margin-top: 3.59rem;
+    margin-top: 4.4rem;
     width: 100vw;
 
-    @media (max-width: 325px) {
-    margin-top: 2.58rem;
-
- }
-    @media (min-width: 540px) and (max-width: 599px) {
-        margin-top: 3.3rem;
-    
- }
-
-    @media (min-width: 600px) and (max-width: 1000px){
-      margin-top: 4.59rem;
-}
-    @media (min-width: 1001px) {
-        margin-top: 6.1rem;
-    
- }
 ` 
 export const ImageHeader = styled.div`
     background-image: url("https://images.unsplash.com/photo-1590004829017-f30ef3c5faf1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTJ8fGNpdHJ1c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60");
@@ -28,15 +12,13 @@ export const ImageHeader = styled.div`
     background-size: cover;
     height: 13rem;
     
-   
+  
 
-    @media (min-width: 600px) and (max-width: 1000px){
+    @media (min-width: 600px){
       height: 20rem;
 }
-    @media (min-width: 1001px) {
-        height: 27rem;
-    
- }
+ 
+
 `
 export const FormDiv = styled.div`
     background-color: #F49728;
@@ -123,42 +105,21 @@ export const FormButton = styled.button`
     color: #0F7C4F;
     height: 2rem;
     width: 14rem;
-    margin-left: 12%;
-    margin-top: .4rem;
-    font-size: 1rem;
-
-    @media (max-width: 325px) {
-    width: 11.7rem;
-    height: 2rem;
-
- }
-
- @media (min-width: 400px) and (max-width: 414px) {
-    width: 16rem;
-    height: 2rem;
-
- }
-
-    @media (min-width: 540px) and (max-width: 599px) {
-        font-size: 2rem;
-        height: 2.3rem;
-        width: 22rem;
     
- }
+    
+    margin-top: .4rem;
+    align-self: center;
+    
+
     @media (min-width: 600px) and (max-width: 1000px){
         font-size:2rem;
-        height: 2.5rem;
-        width: 33rem;
+        height: 3rem;
 }
     @media (min-width: 1001px) {
         font-size: 3rem;
         height: 4rem;
-        width: 45rem;
     
  }
- @media (min-width: 1270px) {
-       width: 58rem;
-    }
 
  
 `
