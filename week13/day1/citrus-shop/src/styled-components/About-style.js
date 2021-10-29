@@ -2,9 +2,9 @@ import styled from "styled-components";
 
 export const MainDiv = styled.div`
     position:absolute;
-    margin-top: 4.4rem;
+    margin-top: 4.7rem;
     width: 100vw;
-
+    font-family: 'Barlow Condensed', sans-serif;
 ` 
 export const ImageHeader = styled.div`
     background-image: url("https://images.unsplash.com/photo-1590004829017-f30ef3c5faf1?ixid=MnwxMjA3fDB8MHxzZWFyY2h8OTJ8fGNpdHJ1c3xlbnwwfHwwfHw%3D&ixlib=rb-1.2.1&auto=format&fit=crop&w=400&q=60");
@@ -78,6 +78,7 @@ export const ContactHeader = styled.h1`
 export const FormInput = styled.input`
     margin-bottom: .5rem;
     height: 1.5rem;
+   
     @media (min-width: 600px) and (max-width: 1000px){
         font-size:1.5rem;
         height: 2rem;
@@ -90,6 +91,8 @@ export const FormInput = styled.input`
 `
 export const FormTextArea = styled.textarea`
     margin-bottom: .5rem;
+    font-family: 'Barlow Condensed', sans-serif;
+    
     @media (min-width: 600px) and (max-width: 1000px){
         font-size:1.5rem;
 }
@@ -105,6 +108,7 @@ export const FormButton = styled.button`
     color: #0F7C4F;
     height: 2rem;
     width: 14rem;
+    font-family: 'Barlow Condensed', sans-serif;
     
     
     margin-top: .4rem;

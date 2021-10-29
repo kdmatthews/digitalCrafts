@@ -6,7 +6,8 @@ export const ShopDiv = styled.div`
  grid-template-columns: 1fr;
  width: 99vw;
 position: absolute;
-margin-top: 5rem;
+margin-top: 4.7rem;
+font-family: 'Barlow Condensed', sans-serif;
  
  
 
