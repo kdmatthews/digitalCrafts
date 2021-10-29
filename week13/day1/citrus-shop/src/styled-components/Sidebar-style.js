@@ -3,7 +3,7 @@ import styled from "styled-components";
 export const SideBarDiv = styled.div`
     grid-area: sidebar;
     background-color: #BAC6AD;
-    height: 95vh;
+    height: 100vh;
     width: 10rem;
     display: flex;
     flex-direction: column;
@@ -12,6 +12,7 @@ export const SideBarDiv = styled.div`
     font-size: 1.5rem;
     position: relative;
     z-index: 2;
+    
  
      @media (min-width: 600px) and (max-width: 1000px){
         width: 12rem;
@@ -45,6 +46,7 @@ export const SideBarDiv = styled.div`
     a{
       text-decoration:none;
       color: #0F7C4F;
+      font-family: 'Barlow Condensed', sans-serif;
 
       @media (min-width: 600px) and (max-width: 1000px){
        font-size: 2rem;

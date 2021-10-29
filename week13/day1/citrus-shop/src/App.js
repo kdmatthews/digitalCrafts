@@ -5,6 +5,7 @@ import ShopContainer from './components/ShopContainer';
 import CartContainer from './components/CartContainer';
 import About from './components/About';
 import Sidebar from './components/Sidebar';
+import ThankYou from './components/ThankYou';
 
 
 import { useSelector } from "react-redux";
@@ -30,7 +31,10 @@ function App() {
       <Route exact path="/cart">
         <CartContainer />
       </Route>
-      <Redirect to="/" />
+      <Route exact path="/thankyou">
+        <ThankYou />
+        </Route>
+      {/* <Redirect to="/" /> */}
     </AppDiv>
       </Switch>
     </Router>

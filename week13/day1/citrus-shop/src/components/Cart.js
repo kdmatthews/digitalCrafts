@@ -30,6 +30,7 @@ export default function Cart(props) {
         <PriceDiv>
         <CartPrice>${item?.price} </CartPrice>
         {/* <CartPrice>${item?.price * item?.quantity} </CartPrice> */}
+       
         <CartButton onClick={()=>RemoveItemFromCart(dispatch, item)}>X</CartButton>
         </PriceDiv>
            

@@ -5,8 +5,9 @@ export const NavBarDiv = styled.div`
     display: flex;
     justify-content: flex-start;
     background-color: #BAC6AD;
-    height: 70px;
+    height: 75px;
     width: 100vw;
+    font-family: 'Barlow Condensed', sans-serif;
   
 
 
@@ -28,7 +29,7 @@ export const Title = styled.h1`
     text-align: center;
     color: #0F7C4F;
     margin: 1rem;
-    font-size: 2rem;
+    font-size: 1.85rem;
 
     @media (max-width: 325px) {
     font-size: 1.5rem;

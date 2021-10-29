@@ -7,15 +7,10 @@ export const CartDiv = styled.div`
     display: grid;
     grid-template-columns: 1fr;
     position: absolute;
-    margin-top: 5rem;
+    margin-top: 4.7rem;
+    font-family: 'Barlow Condensed', sans-serif;
 
-    @media (min-width: 600px) and (max-width: 1000px){
-      margin-top: 6rem;
-}
-    @media (min-width: 1001px) {
-        margin-top: 8rem;
-    
- }
+   
 `
 export const TotalDiv = styled.div`
     display: grid;
@@ -187,7 +182,7 @@ export const YourCart = styled.h2`
  }
 `
 
-export const CheckoutButton = styled.button`
+export const CheckoutButton = styled.a`
     color: black;
     height: 2rem;
     margin-top: .6rem;
@@ -196,6 +191,11 @@ export const CheckoutButton = styled.button`
     background-color: orange;
     border: none;
     border-radius: 4px;
+    display: flex;
+    align-items:center;
+    justify-content: center;
+    text-decoration: none;
+    font-family: 'Barlow Condensed', sans-serif;
     
     
     

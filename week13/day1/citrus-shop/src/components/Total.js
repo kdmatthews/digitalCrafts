@@ -1,10 +1,13 @@
 import React from 'react';
-import { useSelector } from 'react-redux';
+import { useSelector, useDispatch } from 'react-redux';
 import { TotalHeader, TotalDiv, CheckoutButton, YourCart } from '../styled-components/Cart-style';
+import { RefreshCart } from '../actions/cart-actions';
 
 export default function Total() {
 
     const cartInfo = useSelector((state)=>state.CartInfo);
+    const dispatch = useDispatch();
+    
     console.log(cartInfo)
     let total = 0;
     let formatter = new Intl.NumberFormat('en-US', {
@@ -24,8 +27,9 @@ export default function Total() {
         <TotalDiv>
           
           <TotalHeader>Total: {formatter.format(total)}</TotalHeader>
-          <CheckoutButton onClick={()=>alert("Thank you for trusting us with your citrus needs.")}>Checkout</CheckoutButton>
-        
+          <CheckoutButton href="/thankyou" onClick={()=>RefreshCart(dispatch)}>Checkout</CheckoutButton>
+          {/* <CheckoutButton onClick={()=>RefreshCart(dispatch)}>Checkout</CheckoutButton> */}
+
         </TotalDiv>
         </>
     )

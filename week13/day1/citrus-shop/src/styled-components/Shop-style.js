@@ -6,7 +6,8 @@ export const ShopDiv = styled.div`
  grid-template-columns: 1fr;
  width: 99vw;
 position: absolute;
-margin-top: 5rem;
+margin-top: 4.7rem;
+font-family: 'Barlow Condensed', sans-serif;
  
  
 
@@ -27,6 +28,8 @@ export const Image = styled.img`
     align-self: center;
     margin-left: .6rem;
     margin-right: .6rem;
+    height: 15rem;
+    width: 22rem;
    
 `
 
