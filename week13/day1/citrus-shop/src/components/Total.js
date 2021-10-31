@@ -15,8 +15,7 @@ export default function Total() {
         currency: "USD",
     });
     for (const x in cartInfo) {
-        console.log(cartInfo[x].price)
-        console.log(cartInfo[x].quantity)
+        
         total += cartInfo[x].price * cartInfo[x].quantity
        
         

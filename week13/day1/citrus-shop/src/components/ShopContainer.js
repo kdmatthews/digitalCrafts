@@ -2,7 +2,7 @@ import React from 'react';
 import { useSelector, useDispatch } from 'react-redux';
 
 import { IncrementQuantity, DecrementQuantity } from '../actions/quantity-actions';
-import { ShopDiv, ShopTrees } from '../styled-components/Shop-style';
+import { ShopDiv } from '../styled-components/Shop-style';
 
 import Shop from './Shop';
 
@@ -13,8 +13,9 @@ export default function ShopContainer() {
     
     console.log(shopInfo)
     return (
+        
         <ShopDiv>
-            {/* <ShopTrees>Shop Trees</ShopTrees> */}
+            
             {shopInfo?.map((item) => (
                 
                 <Shop item={item} />
@@ -22,5 +23,6 @@ export default function ShopContainer() {
             ))}
               
         </ShopDiv>
+       
     )
 }
