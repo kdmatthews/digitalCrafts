@@ -48,6 +48,10 @@ const initialState =[
 
 const ShopInfo = (state=initialState, action) => {
     switch(action.type){
+
+        // Increment quantity and decrement quantity functions are not quite right yet. They will incrememnt 
+        // and decrement but only by the number of times of objects you are mapping over. I have kept the code to
+        // work on fixing later. The buttons that these cases are attached to have been commented out. 
         case INCREMENT_QUANTITY:
             const addAmount = state;
             const addAmountFiltered = addAmount.filter((tree)=> action.payload.quantity += 1);

@@ -34,7 +34,6 @@ function App() {
       <Route exact path="/thankyou">
         <ThankYou />
         </Route>
-      {/* <Redirect to="/" /> */}
     </AppDiv>
       </Switch>
     </Router>
