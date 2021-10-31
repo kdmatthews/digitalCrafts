@@ -24,8 +24,9 @@ I tried to keep the home page simple and user friendly. I wrote some background 
 
 On this page users will be able to browse the citrus trees and prices for the company. They can add trees to their cart. To get this page running I first created a shop reducer and actions. The reducer contains the initial state. The initial state is an array of objects. Each object contains the name, price, quantity (I did not get around to finishing the quantity portion of this project, but hope to return to it later), size, and image. This is mapped over in the shop container component in order to get this information to render on the page. 
 
-<img src="/project/shopcontainer.png" alt="" width="400">
 <br>
+<img src="/project/shopcontainer.png" alt="" width="400">
+
 
 ![ScreenShot](/shopcontainer.png)
 
