@@ -28,21 +28,22 @@ On this page users will be able to browse the citrus trees and prices for the co
     <img src="/project/shopcontainer.png" alt="" width="400">
 
 
-![ScreenShot](/shopcontainer.png)
+![ScreenShot](/src/project/shopcontainer.png)
 
 ### Cart Page
 
 <img src="/project/cartpage.png" alt="" width="400">
 
 The cart page is the most involved page. There is a cart reducer with an initial state of a blank array. The cart-actions made were MoveItemToCart and RemoveItemFromCart. The MoveItemToCart action was placed on a button in the shop page. When this button gets pressed, the action gets dispatched and it adds that item to the state in the cart reducer. The RemoveItemFromCart action was added to a button in the cart page. This button was styled to look like an "X". When a user presses this button the action is dispatched, it matches the case in the reducer, and the item is removed from state. This page also consists of a total. 
-
+<p>
 <img src="/project/cartreducer.png" alt="" width="400">
+</p>
 The total is a seperate container with a function that adds the total of the items in the cart. The last thing I added to this page was the checkout button. When a user clicks the checkout button, they will be taken to the last page.
 
 ### Thank You Page
-
-<img src="/project/thankyoupage.png" alt="" width="400">
-
+<p>
+<img src="src/project/thankyoupage.png" alt="" width="400">
+</p>
 This page simply thanks the user for their purchase and provides them with a link to UPS. This page was added as something to make the page even more user friendly. 
 
 ...
