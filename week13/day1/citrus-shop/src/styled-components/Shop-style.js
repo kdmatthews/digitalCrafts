@@ -70,3 +70,6 @@ export const PlantName = styled.h2`
     margin-left: 1rem;
     margin-bottom: 0;
 `
+export const ShopTrees = styled.h1 `
+    text-align: center;
+`
