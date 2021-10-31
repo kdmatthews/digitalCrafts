@@ -26,6 +26,8 @@ On this page users will be able to browse the citrus trees and prices for the co
 
 <img src="/project/shopcontainer.png" alt="" width="400">
 
+![ScreenShot](/project/shopcontainer.png)
+
 ### Cart Page
 
 <img src="/project/cartpage.png" alt="" width="400">
