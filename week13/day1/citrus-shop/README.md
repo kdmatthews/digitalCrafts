@@ -11,11 +11,13 @@ Medium Article: https://medium.com/@kdmatthews77/citrus-in-the-city-a-website-to
 ## Layout
 
 ### Home Page
+<p>
 <img src="/assets/project/aboutpage.png" alt="" width="400">
-
+</p>
 I tried to keep the home page simple and user friendly. I wrote some background information about the company as well as a contact page where users can type questions or concerns. When you click on the hamburger menu, the users will be able to select the home, shop, or cart pages.
 
 ### Shop Page
+
 <img src="/assets/project/shoppage.png" alt="" width="400">
 
 On this page users will be able to browse the citrus trees and prices for the company. They can add trees to their cart. To get this page running I first created a shop reducer and actions. The reducer contains the initial state. The initial state is an array of objects. Each object contains the name, price, quantity (I did not get around to finishing the quantity portion of this project, but hope to return to it later), size, and image. This is mapped over in the shop container component in order to get this information to render on the page. 
