@@ -29,7 +29,7 @@ export const Image = styled.img`
     margin-left: .6rem;
     margin-right: .6rem;
     height: 15rem;
-    width: 22rem;
+    width: 20rem;
    
 `
 

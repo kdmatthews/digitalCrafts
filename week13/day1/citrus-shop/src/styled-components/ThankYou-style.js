@@ -17,6 +17,10 @@ export const ThankDiv = styled.div`
     background-color: #F49728;
     height: 100vh;
     margin-left: 40%;
+    display: flex;
+    align-content: center;
+    flex-direction: column;
+    
   
     padding: 3rem;
   
@@ -25,5 +29,9 @@ export const ThankDiv = styled.div`
 export const UPS = styled.img `
     height: 10rem;
     width: 12rem;
-    margin: 0;
+   
+    
+    
+    
+  
 `
