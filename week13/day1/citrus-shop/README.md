@@ -22,19 +22,20 @@ I tried to keep the home page simple and user friendly. I wrote some background 
 <p>
 <img src="src/project/shoppage.png" alt="" width="400">
 </p>
+
 On this page users will be able to browse the citrus trees and prices for the company. They can add trees to their cart. To get this page running I first created a shop reducer and actions. The reducer contains the initial state. The initial state is an array of objects. Each object contains the name, price, quantity (I did not get around to finishing the quantity portion of this project, but hope to return to it later), size, and image. This is mapped over in the shop container component in order to get this information to render on the page. 
 
 <p>
     <img src="src/project/shopcontainer.png" alt="" width="400">
 </p>
 
-![ScreenShot](/src/project/shopcontainer.png)
 
 ### Cart Page
 <p>
 <img src="src/project/cartpage.png" alt="" width="400">
 </p>
 The cart page is the most involved page. There is a cart reducer with an initial state of a blank array. The cart-actions made were MoveItemToCart and RemoveItemFromCart. The MoveItemToCart action was placed on a button in the shop page. When this button gets pressed, the action gets dispatched and it adds that item to the state in the cart reducer. The RemoveItemFromCart action was added to a button in the cart page. This button was styled to look like an "X". When a user presses this button the action is dispatched, it matches the case in the reducer, and the item is removed from state. This page also consists of a total. 
+
 <p>
 <img src="src/project/cartreducer.png" alt="" width="400">
 </p>
