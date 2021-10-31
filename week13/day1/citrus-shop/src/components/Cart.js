@@ -1,7 +1,7 @@
 import React from 'react';
 import { useDispatch } from "react-redux";
 import { RemoveItemFromCart } from '../actions/cart-actions';
-import { CartButton, CartPlantName, CartPrice, CartImage, CartItem, ImageDiv, DetailsDiv, PriceDiv, RemoveDiv, QuantityDiv, CartQuantity, CartSize } from '../styled-components/Cart-style';
+import { CartButton, CartPlantName, CartPrice, CartImage, CartItem, ImageDiv, DetailsDiv, PriceDiv, QuantityDiv, CartQuantity, CartSize } from '../styled-components/Cart-style';
 
 
 

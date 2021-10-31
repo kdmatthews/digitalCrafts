@@ -1,6 +1,5 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import { ImageDiv } from '../styled-components/Cart-style';
 import { LinkDiv } from '../styled-components/Sidebar-style';
 
 export default function NavBarLinks(props) {
