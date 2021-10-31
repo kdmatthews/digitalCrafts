@@ -13,7 +13,7 @@ Medium Article: https://medium.com/@kdmatthews77/citrus-in-the-city-a-website-to
 ### Home Page
 
 <p>
-<img src="/project/aboutpage.jpg" alt="" width="400">
+<img src="/src/project/aboutpage.jpg" alt="" width="400">
 </p>
 
 I tried to keep the home page simple and user friendly. I wrote some background information about the company as well as a contact page where users can type questions or concerns. When you click on the hamburger menu, the users will be able to select the home, shop, or cart pages.
