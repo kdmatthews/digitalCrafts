@@ -19,8 +19,7 @@ export default function Shop(props) {
             <PlantName>{item?.name}</PlantName>
             {/* <button onClick={() =>IncrementQuantity(dispatch, item)}>Increment</button>
             <button onClick={() =>DecrementQuantity(dispatch, item)}>Decrement</button>  */}
-{/*           
-            <h4>{item?.quantity}</h4> */}
+{/*           <h4>{item?.quantity}</h4> */}
             <Button onClick={()=>MoveItemToCart(dispatch, item)}>Add to Cart</Button>
             
         </ItemDiv>
